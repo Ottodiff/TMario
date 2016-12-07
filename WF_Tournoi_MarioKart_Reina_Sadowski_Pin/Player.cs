@@ -26,11 +26,11 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
         public Player()
         {
             this.Joueur = _joueur;
+            rdm = new Random();
         }
 
         public string GetMapJockey()
         {
-            rdm = new Random();
             int r = rdm.Next(_eleve.Count());
 
             return Joueur = _eleve[r].ToString();
@@ -42,7 +42,6 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             int r;
             while (i <= 2)
             {
-                rdm = new Random();
                 r = rdm.Next(_eleve.Count());
                 _equipe1.Add(_eleve[r]);
                 _eleve.Remove(_eleve[r]);
@@ -56,7 +55,6 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             int r;
             while (i <= 2)
             {
-                rdm = new Random();
                 r = rdm.Next(_eleve.Count());
                 _equipe2.Add(_eleve[r]);
                 _eleve.Remove(_eleve[r]);
@@ -70,7 +68,6 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             int r;
             while (i <= 2)
             {
-                rdm = new Random();
                 r = rdm.Next(_eleve.Count());
                 _equipe3.Add(_eleve[r]);
                 _eleve.Remove(_eleve[r]);
@@ -84,7 +81,6 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             int r;
             while (i <= 2)
             {
-                rdm = new Random();
                 r = rdm.Next(_eleve.Count());
                 _equipe4.Add(_eleve[r]);
                 _eleve.Remove(_eleve[r]);
@@ -98,7 +94,6 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             int r;
             while (i <= 2)
             {
-                rdm = new Random();
                 r = rdm.Next(_eleve.Count());
                 _equipe5.Add(_eleve[r]);
                 _eleve.Remove(_eleve[r]);

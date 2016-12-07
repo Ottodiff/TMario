@@ -848,7 +848,6 @@
             this.Controls.Add(this.tclOnglets);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.tbAffichage.ResumeLayout(false);
             this.tbAffichage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
