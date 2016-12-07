@@ -22,74 +22,74 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             btnCreationEquipe.Enabled = false;
 
             //ligne 1
-            label1.Visible = false;
-            numericUpDown1.Visible = false;
-            label2.Visible = false;
-            numericUpDown2.Visible = false;
+            lblE1M1.Visible = false;
+            nudE1M1.Visible = false;
+            lblE2M1.Visible = false;
+            nudE2M1.Visible = false;
             btnLock.Visible = false;
 
             //ligne 2
-            label3.Visible = false;
-            numericUpDown3.Visible = false;
-            label4.Visible = false;
-            numericUpDown4.Visible = false;
-            button1.Visible = false;
+            lblE3M2.Visible = false;
+            nudE3M2.Visible = false;
+            lblE4M2.Visible = false;
+            nudE4M2.Visible = false;
+            btnLock.Visible = false;
 
             //ligne 3
-            label5.Visible = false;
-            numericUpDown5.Visible = false;
-            label6.Visible = false;
-            numericUpDown6.Visible = false;
-            button2.Visible = false;
+            lblE5M3.Visible = false;
+            nudE5M3.Visible = false;
+            lblE1M3.Visible = false;
+            nudE1M3.Visible = false;
+            btnLock.Visible = false;
 
-            //ligne 2
-            label7.Visible = false;
-            numericUpDown7.Visible = false;
-            label8.Visible = false;
-            numericUpDown8.Visible = false;
-            button3.Visible = false;
+            //ligne 4
+            lblE2M4.Visible = false;
+            nudE2M4.Visible = false;
+            lblE3M4.Visible = false;
+            nudE3M4.Visible = false;
+            btnLock.Visible = false;
 
-            //ligne 2
-            label9.Visible = false;
-            numericUpDown9.Visible = false;
-            label10.Visible = false;
-            numericUpDown10.Visible = false;
-            button4.Visible = false;
+            //ligne 5
+            lblE4M5.Visible = false;
+            nudE4M5.Visible = false;
+            lblE5M5.Visible = false;
+            nudE5M5.Visible = false;
+            btnLock.Visible = false;
 
-            //ligne 2
-            label11.Visible = false;
-            numericUpDown11.Visible = false;
-            label12.Visible = false;
-            numericUpDown12.Visible = false;
-            button5.Visible = false;
+            //ligne 6
+            lblE1M6.Visible = false;
+            nudE1M6.Visible = false;
+            lblE3M6.Visible = false;
+            nudE3M6.Visible = false;
+            btnLock.Visible = false;
 
-            //ligne 2
-            label13.Visible = false;
-            numericUpDown13.Visible = false;
-            label14.Visible = false;
-            numericUpDown14.Visible = false;
-            button6.Visible = false;
+            //ligne 7
+            lblE2M7.Visible = false;
+            nudE2M7.Visible = false;
+            lblE4M7.Visible = false;
+            nudE4M7.Visible = false;
+            btnLock.Visible = false;
 
-            //ligne 2
-            label15.Visible = false;
-            numericUpDown15.Visible = false;
-            label16.Visible = false;
-            numericUpDown16.Visible = false;
-            button7.Visible = false;
+            //ligne 8
+            lblE3M8.Visible = false;
+            nudE3M8.Visible = false;
+            lblE5M8.Visible = false;
+            nudE5M8.Visible = false;
+            btnLock.Visible = false;
 
-            //ligne 2
-            label17.Visible = false;
-            numericUpDown17.Visible = false;
-            label18.Visible = false;
-            numericUpDown18.Visible = false;
-            button8.Visible = false;
+            //ligne 9
+            lblE1M9.Visible = false;
+            nudE1M9.Visible = false;
+            lblE4M9.Visible = false;
+            nudE4M9.Visible = false;
+            btnLock.Visible = false;
 
-            //ligne 2
-            label19.Visible = false;
-            numericUpDown19.Visible = false;
-            label20.Visible = false;
-            numericUpDown20.Visible = false;
-            button9.Visible = false;
+            //ligne 10
+            lblE2M10.Visible = false;
+            nudE2M10.Visible = false;
+            lblE5M10.Visible = false;
+            nudE5M10.Visible = false;
+            btnLock.Visible = false;
         }
 
         private void btnMapJockey_Click(object sender, EventArgs e)
@@ -112,6 +112,21 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             List<string> E5 = pl.GetPlayerE5();
             lblNomEquipe5.Text = E5[0] + " " + E5[1];
             btnCreationEquipe.Enabled = false;
+        }
+
+        private void btnCalculer_Click(object sender, EventArgs e)
+        {
+            Score src = new Score(lblE1M1.Text, lblE2M1.Text, Convert.ToInt32(nudE1M1.Value), Convert.ToInt32(nudE2M1.Value));
+            lblPointsE1.Text = Convert.ToString(nudE1M1.Value + nudE1M3.Value + nudE1M6.Value + nudE1M9.Value);
+            lblPointsE2.Text = Convert.ToString(nudE2M1.Value + nudE2M10.Value + nudE2M4.Value + nudE2M7.Value);
+            lblPointsE3.Text = Convert.ToString(nudE3M2.Value + nudE3M4.Value + nudE3M6.Value + nudE3M8.Value);
+            lblPointsE4.Text = Convert.ToString(nudE4M2.Value + nudE4M5.Value + nudE4M7.Value + nudE4M9.Value);
+            lblPointsE5.Text = Convert.ToString(nudE5M10.Value + nudE5M3.Value + nudE5M5.Value + nudE5M8.Value);
+
+            if (Convert.ToInt32(lblPointsE1.Text) > Convert.ToInt32(lblPointsE2.Text) || Convert.ToInt32(lblPointsE1.Text) > Convert.ToInt32(lblPointsE3.Text) || Convert.ToInt32(lblPointsE1.Text) > Convert.ToInt32(lblPointsE4.Text) || Convert.ToInt32(lblPointsE1.Text) > Convert.ToInt32(lblPointsE5.Text))
+            {
+                tbx1er.Text = lblNomEquipe1.Text;
+            }
         }
     }
 }
