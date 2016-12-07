@@ -20,76 +20,77 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             InitializeComponent();
 
             btnCreationEquipe.Enabled = false;
+            btnCalculer.Visible = false;
 
             //ligne 1
             lblE1M1.Visible = false;
             nudE1M1.Visible = false;
             lblE2M1.Visible = false;
             nudE2M1.Visible = false;
-            btnLock.Visible = false;
+            btnLock1.Visible = false;
 
             //ligne 2
             lblE3M2.Visible = false;
             nudE3M2.Visible = false;
             lblE4M2.Visible = false;
             nudE4M2.Visible = false;
-            btnLock.Visible = false;
+            btnLock2.Visible = false;
 
             //ligne 3
             lblE5M3.Visible = false;
             nudE5M3.Visible = false;
             lblE1M3.Visible = false;
             nudE1M3.Visible = false;
-            btnLock.Visible = false;
+            btnLock3.Visible = false;
 
             //ligne 4
             lblE2M4.Visible = false;
             nudE2M4.Visible = false;
             lblE3M4.Visible = false;
             nudE3M4.Visible = false;
-            btnLock.Visible = false;
+            btnLock4.Visible = false;
 
             //ligne 5
             lblE4M5.Visible = false;
             nudE4M5.Visible = false;
             lblE5M5.Visible = false;
             nudE5M5.Visible = false;
-            btnLock.Visible = false;
+            btnLock5.Visible = false;
 
             //ligne 6
             lblE1M6.Visible = false;
             nudE1M6.Visible = false;
             lblE3M6.Visible = false;
             nudE3M6.Visible = false;
-            btnLock.Visible = false;
+            btnLock6.Visible = false;
 
             //ligne 7
             lblE2M7.Visible = false;
             nudE2M7.Visible = false;
             lblE4M7.Visible = false;
             nudE4M7.Visible = false;
-            btnLock.Visible = false;
+            btnLock7.Visible = false;
 
             //ligne 8
             lblE3M8.Visible = false;
             nudE3M8.Visible = false;
             lblE5M8.Visible = false;
             nudE5M8.Visible = false;
-            btnLock.Visible = false;
+            btnLock8.Visible = false;
 
             //ligne 9
             lblE1M9.Visible = false;
             nudE1M9.Visible = false;
             lblE4M9.Visible = false;
             nudE4M9.Visible = false;
-            btnLock.Visible = false;
+            btnLock9.Visible = false;
 
             //ligne 10
             lblE2M10.Visible = false;
             nudE2M10.Visible = false;
             lblE5M10.Visible = false;
             nudE5M10.Visible = false;
-            btnLock.Visible = false;
+            btnLock10.Visible = false;
         }
 
         private void btnMapJockey_Click(object sender, EventArgs e)

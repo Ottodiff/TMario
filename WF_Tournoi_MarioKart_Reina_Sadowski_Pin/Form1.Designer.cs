@@ -31,7 +31,71 @@
             this.tbMesCommandes = new System.Windows.Forms.TabPage();
             this.tbCommande = new System.Windows.Forms.TabPage();
             this.tbComposition = new System.Windows.Forms.TabPage();
+            this.tbxWinner = new System.Windows.Forms.TextBox();
+            this.tbxWM5 = new System.Windows.Forms.TextBox();
+            this.tbxWM4 = new System.Windows.Forms.TextBox();
+            this.tbxLM2 = new System.Windows.Forms.TextBox();
+            this.tbxWM3 = new System.Windows.Forms.TextBox();
+            this.tbxWM2 = new System.Windows.Forms.TextBox();
+            this.tbxWM1 = new System.Windows.Forms.TextBox();
+            this.tbxLM1 = new System.Windows.Forms.TextBox();
+            this.tbx5eme = new System.Windows.Forms.TextBox();
+            this.tbx4eme = new System.Windows.Forms.TextBox();
+            this.tbx2eme = new System.Windows.Forms.TextBox();
+            this.tbx3eme = new System.Windows.Forms.TextBox();
+            this.tbx1er = new System.Windows.Forms.TextBox();
             this.tbAffichage = new System.Windows.Forms.TabPage();
+            this.btnCalculer = new System.Windows.Forms.Button();
+            this.btnLock10 = new System.Windows.Forms.Button();
+            this.nudE5M10 = new System.Windows.Forms.NumericUpDown();
+            this.nudE2M10 = new System.Windows.Forms.NumericUpDown();
+            this.lblE5M10 = new System.Windows.Forms.Label();
+            this.lblE2M10 = new System.Windows.Forms.Label();
+            this.btnLock9 = new System.Windows.Forms.Button();
+            this.nudE4M9 = new System.Windows.Forms.NumericUpDown();
+            this.nudE1M9 = new System.Windows.Forms.NumericUpDown();
+            this.lblE4M9 = new System.Windows.Forms.Label();
+            this.lblE1M9 = new System.Windows.Forms.Label();
+            this.btnLock8 = new System.Windows.Forms.Button();
+            this.nudE5M8 = new System.Windows.Forms.NumericUpDown();
+            this.nudE3M8 = new System.Windows.Forms.NumericUpDown();
+            this.lblE5M8 = new System.Windows.Forms.Label();
+            this.lblE3M8 = new System.Windows.Forms.Label();
+            this.btnLock7 = new System.Windows.Forms.Button();
+            this.nudE4M7 = new System.Windows.Forms.NumericUpDown();
+            this.nudE2M7 = new System.Windows.Forms.NumericUpDown();
+            this.lblE4M7 = new System.Windows.Forms.Label();
+            this.lblE2M7 = new System.Windows.Forms.Label();
+            this.btnLock6 = new System.Windows.Forms.Button();
+            this.nudE3M6 = new System.Windows.Forms.NumericUpDown();
+            this.nudE1M6 = new System.Windows.Forms.NumericUpDown();
+            this.lblE3M6 = new System.Windows.Forms.Label();
+            this.lblE1M6 = new System.Windows.Forms.Label();
+            this.btnLock5 = new System.Windows.Forms.Button();
+            this.nudE5M5 = new System.Windows.Forms.NumericUpDown();
+            this.nudE4M5 = new System.Windows.Forms.NumericUpDown();
+            this.lblE5M5 = new System.Windows.Forms.Label();
+            this.lblE4M5 = new System.Windows.Forms.Label();
+            this.btnLock4 = new System.Windows.Forms.Button();
+            this.nudE3M4 = new System.Windows.Forms.NumericUpDown();
+            this.nudE2M4 = new System.Windows.Forms.NumericUpDown();
+            this.lblE3M4 = new System.Windows.Forms.Label();
+            this.lblE2M4 = new System.Windows.Forms.Label();
+            this.btnLock3 = new System.Windows.Forms.Button();
+            this.nudE1M3 = new System.Windows.Forms.NumericUpDown();
+            this.nudE5M3 = new System.Windows.Forms.NumericUpDown();
+            this.lblE1M3 = new System.Windows.Forms.Label();
+            this.lblE5M3 = new System.Windows.Forms.Label();
+            this.btnLock2 = new System.Windows.Forms.Button();
+            this.nudE4M2 = new System.Windows.Forms.NumericUpDown();
+            this.nudE3M2 = new System.Windows.Forms.NumericUpDown();
+            this.lblE4M2 = new System.Windows.Forms.Label();
+            this.lblE3M2 = new System.Windows.Forms.Label();
+            this.btnLock1 = new System.Windows.Forms.Button();
+            this.nudE2M1 = new System.Windows.Forms.NumericUpDown();
+            this.nudE1M1 = new System.Windows.Forms.NumericUpDown();
+            this.lblE2M1 = new System.Windows.Forms.Label();
+            this.lblE1M1 = new System.Windows.Forms.Label();
             this.lblPointsE5 = new System.Windows.Forms.Label();
             this.lblPointsE4 = new System.Windows.Forms.Label();
             this.lblPointsE3 = new System.Windows.Forms.Label();
@@ -52,73 +116,8 @@
             this.lblEquipe2 = new System.Windows.Forms.Label();
             this.lblEquipe1 = new System.Windows.Forms.Label();
             this.tclOnglets = new System.Windows.Forms.TabControl();
-            this.btnCalculer = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.nudE5M10 = new System.Windows.Forms.NumericUpDown();
-            this.nudE2M10 = new System.Windows.Forms.NumericUpDown();
-            this.lblE5M10 = new System.Windows.Forms.Label();
-            this.lblE2M10 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.nudE4M9 = new System.Windows.Forms.NumericUpDown();
-            this.nudE1M9 = new System.Windows.Forms.NumericUpDown();
-            this.lblE4M9 = new System.Windows.Forms.Label();
-            this.lblE1M9 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.nudE5M8 = new System.Windows.Forms.NumericUpDown();
-            this.nudE3M8 = new System.Windows.Forms.NumericUpDown();
-            this.lblE5M8 = new System.Windows.Forms.Label();
-            this.lblE3M8 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.nudE4M7 = new System.Windows.Forms.NumericUpDown();
-            this.nudE2M7 = new System.Windows.Forms.NumericUpDown();
-            this.lblE4M7 = new System.Windows.Forms.Label();
-            this.lblE2M7 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.nudE3M6 = new System.Windows.Forms.NumericUpDown();
-            this.nudE1M6 = new System.Windows.Forms.NumericUpDown();
-            this.lblE3M6 = new System.Windows.Forms.Label();
-            this.lblE1M6 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.nudE5M5 = new System.Windows.Forms.NumericUpDown();
-            this.nudE4M5 = new System.Windows.Forms.NumericUpDown();
-            this.lblE5M5 = new System.Windows.Forms.Label();
-            this.lblE4M5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.nudE3M4 = new System.Windows.Forms.NumericUpDown();
-            this.nudE2M4 = new System.Windows.Forms.NumericUpDown();
-            this.lblE3M4 = new System.Windows.Forms.Label();
-            this.lblE2M4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.nudE1M3 = new System.Windows.Forms.NumericUpDown();
-            this.nudE5M3 = new System.Windows.Forms.NumericUpDown();
-            this.lblE1M3 = new System.Windows.Forms.Label();
-            this.lblE5M3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.nudE4M2 = new System.Windows.Forms.NumericUpDown();
-            this.nudE3M2 = new System.Windows.Forms.NumericUpDown();
-            this.lblE4M2 = new System.Windows.Forms.Label();
-            this.lblE3M2 = new System.Windows.Forms.Label();
-            this.btnLock = new System.Windows.Forms.Button();
-            this.nudE2M1 = new System.Windows.Forms.NumericUpDown();
-            this.nudE1M1 = new System.Windows.Forms.NumericUpDown();
-            this.lblE2M1 = new System.Windows.Forms.Label();
-            this.lblE1M1 = new System.Windows.Forms.Label();
-            this.tbxWinner = new System.Windows.Forms.TextBox();
-            this.tbxWM5 = new System.Windows.Forms.TextBox();
-            this.tbxWM4 = new System.Windows.Forms.TextBox();
-            this.tbxLM2 = new System.Windows.Forms.TextBox();
-            this.tbxWM3 = new System.Windows.Forms.TextBox();
-            this.tbxWM2 = new System.Windows.Forms.TextBox();
-            this.tbxWM1 = new System.Windows.Forms.TextBox();
-            this.tbxLM1 = new System.Windows.Forms.TextBox();
-            this.tbx5eme = new System.Windows.Forms.TextBox();
-            this.tbx4eme = new System.Windows.Forms.TextBox();
-            this.tbx2eme = new System.Windows.Forms.TextBox();
-            this.tbx3eme = new System.Windows.Forms.TextBox();
-            this.tbx1er = new System.Windows.Forms.TextBox();
             this.tbComposition.SuspendLayout();
             this.tbAffichage.SuspendLayout();
-            this.tclOnglets.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudE5M10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudE2M10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudE4M9)).BeginInit();
@@ -139,6 +138,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudE3M2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudE2M1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudE1M1)).BeginInit();
+            this.tclOnglets.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbMesCommandes
@@ -183,55 +183,146 @@
             this.tbComposition.Text = "Composition Menu";
             this.tbComposition.UseVisualStyleBackColor = true;
             // 
+            // tbxWinner
+            // 
+            this.tbxWinner.Location = new System.Drawing.Point(614, 241);
+            this.tbxWinner.Name = "tbxWinner";
+            this.tbxWinner.Size = new System.Drawing.Size(100, 20);
+            this.tbxWinner.TabIndex = 25;
+            // 
+            // tbxWM5
+            // 
+            this.tbxWM5.Location = new System.Drawing.Point(438, 324);
+            this.tbxWM5.Name = "tbxWM5";
+            this.tbxWM5.Size = new System.Drawing.Size(100, 20);
+            this.tbxWM5.TabIndex = 24;
+            // 
+            // tbxWM4
+            // 
+            this.tbxWM4.Location = new System.Drawing.Point(438, 139);
+            this.tbxWM4.Name = "tbxWM4";
+            this.tbxWM4.Size = new System.Drawing.Size(100, 20);
+            this.tbxWM4.TabIndex = 23;
+            // 
+            // tbxLM2
+            // 
+            this.tbxLM2.Location = new System.Drawing.Point(278, 353);
+            this.tbxLM2.Name = "tbxLM2";
+            this.tbxLM2.Size = new System.Drawing.Size(100, 20);
+            this.tbxLM2.TabIndex = 22;
+            // 
+            // tbxWM3
+            // 
+            this.tbxWM3.Location = new System.Drawing.Point(278, 308);
+            this.tbxWM3.Name = "tbxWM3";
+            this.tbxWM3.Size = new System.Drawing.Size(100, 20);
+            this.tbxWM3.TabIndex = 21;
+            // 
+            // tbxWM2
+            // 
+            this.tbxWM2.Location = new System.Drawing.Point(278, 195);
+            this.tbxWM2.Name = "tbxWM2";
+            this.tbxWM2.Size = new System.Drawing.Size(100, 20);
+            this.tbxWM2.TabIndex = 20;
+            // 
+            // tbxWM1
+            // 
+            this.tbxWM1.Location = new System.Drawing.Point(278, 83);
+            this.tbxWM1.Name = "tbxWM1";
+            this.tbxWM1.Size = new System.Drawing.Size(100, 20);
+            this.tbxWM1.TabIndex = 19;
+            // 
+            // tbxLM1
+            // 
+            this.tbxLM1.Location = new System.Drawing.Point(123, 326);
+            this.tbxLM1.Name = "tbxLM1";
+            this.tbxLM1.Size = new System.Drawing.Size(100, 20);
+            this.tbxLM1.TabIndex = 18;
+            // 
+            // tbx5eme
+            // 
+            this.tbx5eme.Location = new System.Drawing.Point(123, 276);
+            this.tbx5eme.Name = "tbx5eme";
+            this.tbx5eme.Size = new System.Drawing.Size(100, 20);
+            this.tbx5eme.TabIndex = 17;
+            // 
+            // tbx4eme
+            // 
+            this.tbx4eme.Location = new System.Drawing.Point(123, 217);
+            this.tbx4eme.Name = "tbx4eme";
+            this.tbx4eme.Size = new System.Drawing.Size(100, 20);
+            this.tbx4eme.TabIndex = 16;
+            // 
+            // tbx2eme
+            // 
+            this.tbx2eme.Location = new System.Drawing.Point(123, 167);
+            this.tbx2eme.Name = "tbx2eme";
+            this.tbx2eme.Size = new System.Drawing.Size(100, 20);
+            this.tbx2eme.TabIndex = 15;
+            // 
+            // tbx3eme
+            // 
+            this.tbx3eme.Location = new System.Drawing.Point(123, 110);
+            this.tbx3eme.Name = "tbx3eme";
+            this.tbx3eme.Size = new System.Drawing.Size(100, 20);
+            this.tbx3eme.TabIndex = 14;
+            // 
+            // tbx1er
+            // 
+            this.tbx1er.Location = new System.Drawing.Point(123, 60);
+            this.tbx1er.Name = "tbx1er";
+            this.tbx1er.Size = new System.Drawing.Size(100, 20);
+            this.tbx1er.TabIndex = 13;
+            // 
             // tbAffichage
             // 
             this.tbAffichage.Controls.Add(this.btnCalculer);
-            this.tbAffichage.Controls.Add(this.button5);
+            this.tbAffichage.Controls.Add(this.btnLock10);
             this.tbAffichage.Controls.Add(this.nudE5M10);
             this.tbAffichage.Controls.Add(this.nudE2M10);
             this.tbAffichage.Controls.Add(this.lblE5M10);
             this.tbAffichage.Controls.Add(this.lblE2M10);
-            this.tbAffichage.Controls.Add(this.button6);
+            this.tbAffichage.Controls.Add(this.btnLock9);
             this.tbAffichage.Controls.Add(this.nudE4M9);
             this.tbAffichage.Controls.Add(this.nudE1M9);
             this.tbAffichage.Controls.Add(this.lblE4M9);
             this.tbAffichage.Controls.Add(this.lblE1M9);
-            this.tbAffichage.Controls.Add(this.button7);
+            this.tbAffichage.Controls.Add(this.btnLock8);
             this.tbAffichage.Controls.Add(this.nudE5M8);
             this.tbAffichage.Controls.Add(this.nudE3M8);
             this.tbAffichage.Controls.Add(this.lblE5M8);
             this.tbAffichage.Controls.Add(this.lblE3M8);
-            this.tbAffichage.Controls.Add(this.button8);
+            this.tbAffichage.Controls.Add(this.btnLock7);
             this.tbAffichage.Controls.Add(this.nudE4M7);
             this.tbAffichage.Controls.Add(this.nudE2M7);
             this.tbAffichage.Controls.Add(this.lblE4M7);
             this.tbAffichage.Controls.Add(this.lblE2M7);
-            this.tbAffichage.Controls.Add(this.button9);
+            this.tbAffichage.Controls.Add(this.btnLock6);
             this.tbAffichage.Controls.Add(this.nudE3M6);
             this.tbAffichage.Controls.Add(this.nudE1M6);
             this.tbAffichage.Controls.Add(this.lblE3M6);
             this.tbAffichage.Controls.Add(this.lblE1M6);
-            this.tbAffichage.Controls.Add(this.button4);
+            this.tbAffichage.Controls.Add(this.btnLock5);
             this.tbAffichage.Controls.Add(this.nudE5M5);
             this.tbAffichage.Controls.Add(this.nudE4M5);
             this.tbAffichage.Controls.Add(this.lblE5M5);
             this.tbAffichage.Controls.Add(this.lblE4M5);
-            this.tbAffichage.Controls.Add(this.button3);
+            this.tbAffichage.Controls.Add(this.btnLock4);
             this.tbAffichage.Controls.Add(this.nudE3M4);
             this.tbAffichage.Controls.Add(this.nudE2M4);
             this.tbAffichage.Controls.Add(this.lblE3M4);
             this.tbAffichage.Controls.Add(this.lblE2M4);
-            this.tbAffichage.Controls.Add(this.button2);
+            this.tbAffichage.Controls.Add(this.btnLock3);
             this.tbAffichage.Controls.Add(this.nudE1M3);
             this.tbAffichage.Controls.Add(this.nudE5M3);
             this.tbAffichage.Controls.Add(this.lblE1M3);
             this.tbAffichage.Controls.Add(this.lblE5M3);
-            this.tbAffichage.Controls.Add(this.button1);
+            this.tbAffichage.Controls.Add(this.btnLock2);
             this.tbAffichage.Controls.Add(this.nudE4M2);
             this.tbAffichage.Controls.Add(this.nudE3M2);
             this.tbAffichage.Controls.Add(this.lblE4M2);
             this.tbAffichage.Controls.Add(this.lblE3M2);
-            this.tbAffichage.Controls.Add(this.btnLock);
+            this.tbAffichage.Controls.Add(this.btnLock1);
             this.tbAffichage.Controls.Add(this.nudE2M1);
             this.tbAffichage.Controls.Add(this.nudE1M1);
             this.tbAffichage.Controls.Add(this.lblE2M1);
@@ -262,6 +353,426 @@
             this.tbAffichage.Size = new System.Drawing.Size(836, 433);
             this.tbAffichage.TabIndex = 0;
             this.tbAffichage.Text = "Affichage";
+            // 
+            // btnCalculer
+            // 
+            this.btnCalculer.Location = new System.Drawing.Point(532, 350);
+            this.btnCalculer.Name = "btnCalculer";
+            this.btnCalculer.Size = new System.Drawing.Size(131, 26);
+            this.btnCalculer.TabIndex = 126;
+            this.btnCalculer.Text = "Calculer";
+            this.btnCalculer.UseVisualStyleBackColor = true;
+            this.btnCalculer.Click += new System.EventHandler(this.btnCalculer_Click);
+            // 
+            // btnLock10
+            // 
+            this.btnLock10.Location = new System.Drawing.Point(698, 305);
+            this.btnLock10.Name = "btnLock10";
+            this.btnLock10.Size = new System.Drawing.Size(47, 20);
+            this.btnLock10.TabIndex = 125;
+            this.btnLock10.Text = "Lock";
+            this.btnLock10.UseVisualStyleBackColor = true;
+            // 
+            // nudE5M10
+            // 
+            this.nudE5M10.Location = new System.Drawing.Point(637, 307);
+            this.nudE5M10.Name = "nudE5M10";
+            this.nudE5M10.Size = new System.Drawing.Size(40, 20);
+            this.nudE5M10.TabIndex = 124;
+            // 
+            // nudE2M10
+            // 
+            this.nudE2M10.Location = new System.Drawing.Point(498, 307);
+            this.nudE2M10.Name = "nudE2M10";
+            this.nudE2M10.Size = new System.Drawing.Size(40, 20);
+            this.nudE2M10.TabIndex = 123;
+            // 
+            // lblE5M10
+            // 
+            this.lblE5M10.AutoSize = true;
+            this.lblE5M10.Location = new System.Drawing.Point(558, 309);
+            this.lblE5M10.Name = "lblE5M10";
+            this.lblE5M10.Size = new System.Drawing.Size(49, 13);
+            this.lblE5M10.TabIndex = 122;
+            this.lblE5M10.Text = "Equipe 5";
+            // 
+            // lblE2M10
+            // 
+            this.lblE2M10.AutoSize = true;
+            this.lblE2M10.Location = new System.Drawing.Point(419, 309);
+            this.lblE2M10.Name = "lblE2M10";
+            this.lblE2M10.Size = new System.Drawing.Size(49, 13);
+            this.lblE2M10.TabIndex = 121;
+            this.lblE2M10.Text = "Equipe 2";
+            // 
+            // btnLock9
+            // 
+            this.btnLock9.Location = new System.Drawing.Point(698, 279);
+            this.btnLock9.Name = "btnLock9";
+            this.btnLock9.Size = new System.Drawing.Size(47, 20);
+            this.btnLock9.TabIndex = 120;
+            this.btnLock9.Text = "Lock";
+            this.btnLock9.UseVisualStyleBackColor = true;
+            // 
+            // nudE4M9
+            // 
+            this.nudE4M9.Location = new System.Drawing.Point(637, 281);
+            this.nudE4M9.Name = "nudE4M9";
+            this.nudE4M9.Size = new System.Drawing.Size(40, 20);
+            this.nudE4M9.TabIndex = 119;
+            // 
+            // nudE1M9
+            // 
+            this.nudE1M9.Location = new System.Drawing.Point(498, 281);
+            this.nudE1M9.Name = "nudE1M9";
+            this.nudE1M9.Size = new System.Drawing.Size(40, 20);
+            this.nudE1M9.TabIndex = 118;
+            // 
+            // lblE4M9
+            // 
+            this.lblE4M9.AutoSize = true;
+            this.lblE4M9.Location = new System.Drawing.Point(558, 283);
+            this.lblE4M9.Name = "lblE4M9";
+            this.lblE4M9.Size = new System.Drawing.Size(49, 13);
+            this.lblE4M9.TabIndex = 117;
+            this.lblE4M9.Text = "Equipe 4";
+            // 
+            // lblE1M9
+            // 
+            this.lblE1M9.AutoSize = true;
+            this.lblE1M9.Location = new System.Drawing.Point(419, 283);
+            this.lblE1M9.Name = "lblE1M9";
+            this.lblE1M9.Size = new System.Drawing.Size(49, 13);
+            this.lblE1M9.TabIndex = 116;
+            this.lblE1M9.Text = "Equipe 1";
+            // 
+            // btnLock8
+            // 
+            this.btnLock8.Location = new System.Drawing.Point(698, 253);
+            this.btnLock8.Name = "btnLock8";
+            this.btnLock8.Size = new System.Drawing.Size(47, 20);
+            this.btnLock8.TabIndex = 115;
+            this.btnLock8.Text = "Lock";
+            this.btnLock8.UseVisualStyleBackColor = true;
+            // 
+            // nudE5M8
+            // 
+            this.nudE5M8.Location = new System.Drawing.Point(637, 255);
+            this.nudE5M8.Name = "nudE5M8";
+            this.nudE5M8.Size = new System.Drawing.Size(40, 20);
+            this.nudE5M8.TabIndex = 114;
+            // 
+            // nudE3M8
+            // 
+            this.nudE3M8.Location = new System.Drawing.Point(498, 255);
+            this.nudE3M8.Name = "nudE3M8";
+            this.nudE3M8.Size = new System.Drawing.Size(40, 20);
+            this.nudE3M8.TabIndex = 113;
+            // 
+            // lblE5M8
+            // 
+            this.lblE5M8.AutoSize = true;
+            this.lblE5M8.Location = new System.Drawing.Point(558, 257);
+            this.lblE5M8.Name = "lblE5M8";
+            this.lblE5M8.Size = new System.Drawing.Size(49, 13);
+            this.lblE5M8.TabIndex = 112;
+            this.lblE5M8.Text = "Equipe 5";
+            // 
+            // lblE3M8
+            // 
+            this.lblE3M8.AutoSize = true;
+            this.lblE3M8.Location = new System.Drawing.Point(419, 257);
+            this.lblE3M8.Name = "lblE3M8";
+            this.lblE3M8.Size = new System.Drawing.Size(49, 13);
+            this.lblE3M8.TabIndex = 111;
+            this.lblE3M8.Text = "Equipe 3";
+            // 
+            // btnLock7
+            // 
+            this.btnLock7.Location = new System.Drawing.Point(698, 227);
+            this.btnLock7.Name = "btnLock7";
+            this.btnLock7.Size = new System.Drawing.Size(47, 20);
+            this.btnLock7.TabIndex = 110;
+            this.btnLock7.Text = "Lock";
+            this.btnLock7.UseVisualStyleBackColor = true;
+            // 
+            // nudE4M7
+            // 
+            this.nudE4M7.Location = new System.Drawing.Point(637, 229);
+            this.nudE4M7.Name = "nudE4M7";
+            this.nudE4M7.Size = new System.Drawing.Size(40, 20);
+            this.nudE4M7.TabIndex = 109;
+            // 
+            // nudE2M7
+            // 
+            this.nudE2M7.Location = new System.Drawing.Point(498, 229);
+            this.nudE2M7.Name = "nudE2M7";
+            this.nudE2M7.Size = new System.Drawing.Size(40, 20);
+            this.nudE2M7.TabIndex = 108;
+            // 
+            // lblE4M7
+            // 
+            this.lblE4M7.AutoSize = true;
+            this.lblE4M7.Location = new System.Drawing.Point(558, 231);
+            this.lblE4M7.Name = "lblE4M7";
+            this.lblE4M7.Size = new System.Drawing.Size(49, 13);
+            this.lblE4M7.TabIndex = 107;
+            this.lblE4M7.Text = "Equipe 4";
+            // 
+            // lblE2M7
+            // 
+            this.lblE2M7.AutoSize = true;
+            this.lblE2M7.Location = new System.Drawing.Point(419, 231);
+            this.lblE2M7.Name = "lblE2M7";
+            this.lblE2M7.Size = new System.Drawing.Size(49, 13);
+            this.lblE2M7.TabIndex = 106;
+            this.lblE2M7.Text = "Equipe 2";
+            // 
+            // btnLock6
+            // 
+            this.btnLock6.Location = new System.Drawing.Point(698, 201);
+            this.btnLock6.Name = "btnLock6";
+            this.btnLock6.Size = new System.Drawing.Size(47, 20);
+            this.btnLock6.TabIndex = 105;
+            this.btnLock6.Text = "Lock";
+            this.btnLock6.UseVisualStyleBackColor = true;
+            // 
+            // nudE3M6
+            // 
+            this.nudE3M6.Location = new System.Drawing.Point(637, 203);
+            this.nudE3M6.Name = "nudE3M6";
+            this.nudE3M6.Size = new System.Drawing.Size(40, 20);
+            this.nudE3M6.TabIndex = 104;
+            // 
+            // nudE1M6
+            // 
+            this.nudE1M6.Location = new System.Drawing.Point(498, 203);
+            this.nudE1M6.Name = "nudE1M6";
+            this.nudE1M6.Size = new System.Drawing.Size(40, 20);
+            this.nudE1M6.TabIndex = 103;
+            // 
+            // lblE3M6
+            // 
+            this.lblE3M6.AutoSize = true;
+            this.lblE3M6.Location = new System.Drawing.Point(558, 205);
+            this.lblE3M6.Name = "lblE3M6";
+            this.lblE3M6.Size = new System.Drawing.Size(49, 13);
+            this.lblE3M6.TabIndex = 102;
+            this.lblE3M6.Text = "Equipe 3";
+            // 
+            // lblE1M6
+            // 
+            this.lblE1M6.AutoSize = true;
+            this.lblE1M6.Location = new System.Drawing.Point(419, 205);
+            this.lblE1M6.Name = "lblE1M6";
+            this.lblE1M6.Size = new System.Drawing.Size(49, 13);
+            this.lblE1M6.TabIndex = 101;
+            this.lblE1M6.Text = "Equipe 1";
+            // 
+            // btnLock5
+            // 
+            this.btnLock5.Location = new System.Drawing.Point(698, 175);
+            this.btnLock5.Name = "btnLock5";
+            this.btnLock5.Size = new System.Drawing.Size(47, 20);
+            this.btnLock5.TabIndex = 100;
+            this.btnLock5.Text = "Lock";
+            this.btnLock5.UseVisualStyleBackColor = true;
+            // 
+            // nudE5M5
+            // 
+            this.nudE5M5.Location = new System.Drawing.Point(637, 177);
+            this.nudE5M5.Name = "nudE5M5";
+            this.nudE5M5.Size = new System.Drawing.Size(40, 20);
+            this.nudE5M5.TabIndex = 99;
+            // 
+            // nudE4M5
+            // 
+            this.nudE4M5.Location = new System.Drawing.Point(498, 177);
+            this.nudE4M5.Name = "nudE4M5";
+            this.nudE4M5.Size = new System.Drawing.Size(40, 20);
+            this.nudE4M5.TabIndex = 98;
+            // 
+            // lblE5M5
+            // 
+            this.lblE5M5.AutoSize = true;
+            this.lblE5M5.Location = new System.Drawing.Point(558, 179);
+            this.lblE5M5.Name = "lblE5M5";
+            this.lblE5M5.Size = new System.Drawing.Size(49, 13);
+            this.lblE5M5.TabIndex = 97;
+            this.lblE5M5.Text = "Equipe 5";
+            // 
+            // lblE4M5
+            // 
+            this.lblE4M5.AutoSize = true;
+            this.lblE4M5.Location = new System.Drawing.Point(419, 179);
+            this.lblE4M5.Name = "lblE4M5";
+            this.lblE4M5.Size = new System.Drawing.Size(49, 13);
+            this.lblE4M5.TabIndex = 96;
+            this.lblE4M5.Text = "Equipe 4";
+            // 
+            // btnLock4
+            // 
+            this.btnLock4.Location = new System.Drawing.Point(698, 149);
+            this.btnLock4.Name = "btnLock4";
+            this.btnLock4.Size = new System.Drawing.Size(47, 20);
+            this.btnLock4.TabIndex = 95;
+            this.btnLock4.Text = "Lock";
+            this.btnLock4.UseVisualStyleBackColor = true;
+            // 
+            // nudE3M4
+            // 
+            this.nudE3M4.Location = new System.Drawing.Point(637, 151);
+            this.nudE3M4.Name = "nudE3M4";
+            this.nudE3M4.Size = new System.Drawing.Size(40, 20);
+            this.nudE3M4.TabIndex = 94;
+            // 
+            // nudE2M4
+            // 
+            this.nudE2M4.Location = new System.Drawing.Point(498, 151);
+            this.nudE2M4.Name = "nudE2M4";
+            this.nudE2M4.Size = new System.Drawing.Size(40, 20);
+            this.nudE2M4.TabIndex = 93;
+            // 
+            // lblE3M4
+            // 
+            this.lblE3M4.AutoSize = true;
+            this.lblE3M4.Location = new System.Drawing.Point(558, 153);
+            this.lblE3M4.Name = "lblE3M4";
+            this.lblE3M4.Size = new System.Drawing.Size(49, 13);
+            this.lblE3M4.TabIndex = 92;
+            this.lblE3M4.Text = "Equipe 3";
+            // 
+            // lblE2M4
+            // 
+            this.lblE2M4.AutoSize = true;
+            this.lblE2M4.Location = new System.Drawing.Point(419, 153);
+            this.lblE2M4.Name = "lblE2M4";
+            this.lblE2M4.Size = new System.Drawing.Size(49, 13);
+            this.lblE2M4.TabIndex = 91;
+            this.lblE2M4.Text = "Equipe 2";
+            // 
+            // btnLock3
+            // 
+            this.btnLock3.Location = new System.Drawing.Point(698, 123);
+            this.btnLock3.Name = "btnLock3";
+            this.btnLock3.Size = new System.Drawing.Size(47, 20);
+            this.btnLock3.TabIndex = 90;
+            this.btnLock3.Text = "Lock";
+            this.btnLock3.UseVisualStyleBackColor = true;
+            // 
+            // nudE1M3
+            // 
+            this.nudE1M3.Location = new System.Drawing.Point(637, 125);
+            this.nudE1M3.Name = "nudE1M3";
+            this.nudE1M3.Size = new System.Drawing.Size(40, 20);
+            this.nudE1M3.TabIndex = 89;
+            // 
+            // nudE5M3
+            // 
+            this.nudE5M3.Location = new System.Drawing.Point(498, 125);
+            this.nudE5M3.Name = "nudE5M3";
+            this.nudE5M3.Size = new System.Drawing.Size(40, 20);
+            this.nudE5M3.TabIndex = 88;
+            // 
+            // lblE1M3
+            // 
+            this.lblE1M3.AutoSize = true;
+            this.lblE1M3.Location = new System.Drawing.Point(558, 127);
+            this.lblE1M3.Name = "lblE1M3";
+            this.lblE1M3.Size = new System.Drawing.Size(49, 13);
+            this.lblE1M3.TabIndex = 87;
+            this.lblE1M3.Text = "Equipe 1";
+            // 
+            // lblE5M3
+            // 
+            this.lblE5M3.AutoSize = true;
+            this.lblE5M3.Location = new System.Drawing.Point(419, 127);
+            this.lblE5M3.Name = "lblE5M3";
+            this.lblE5M3.Size = new System.Drawing.Size(49, 13);
+            this.lblE5M3.TabIndex = 86;
+            this.lblE5M3.Text = "Equipe 5";
+            // 
+            // btnLock2
+            // 
+            this.btnLock2.Location = new System.Drawing.Point(698, 97);
+            this.btnLock2.Name = "btnLock2";
+            this.btnLock2.Size = new System.Drawing.Size(47, 20);
+            this.btnLock2.TabIndex = 85;
+            this.btnLock2.Text = "Lock";
+            this.btnLock2.UseVisualStyleBackColor = true;
+            // 
+            // nudE4M2
+            // 
+            this.nudE4M2.Location = new System.Drawing.Point(637, 99);
+            this.nudE4M2.Name = "nudE4M2";
+            this.nudE4M2.Size = new System.Drawing.Size(40, 20);
+            this.nudE4M2.TabIndex = 84;
+            // 
+            // nudE3M2
+            // 
+            this.nudE3M2.Location = new System.Drawing.Point(498, 99);
+            this.nudE3M2.Name = "nudE3M2";
+            this.nudE3M2.Size = new System.Drawing.Size(40, 20);
+            this.nudE3M2.TabIndex = 83;
+            // 
+            // lblE4M2
+            // 
+            this.lblE4M2.AutoSize = true;
+            this.lblE4M2.Location = new System.Drawing.Point(558, 101);
+            this.lblE4M2.Name = "lblE4M2";
+            this.lblE4M2.Size = new System.Drawing.Size(49, 13);
+            this.lblE4M2.TabIndex = 82;
+            this.lblE4M2.Text = "Equipe 4";
+            // 
+            // lblE3M2
+            // 
+            this.lblE3M2.AutoSize = true;
+            this.lblE3M2.Location = new System.Drawing.Point(419, 101);
+            this.lblE3M2.Name = "lblE3M2";
+            this.lblE3M2.Size = new System.Drawing.Size(49, 13);
+            this.lblE3M2.TabIndex = 81;
+            this.lblE3M2.Text = "Equipe 3";
+            // 
+            // btnLock1
+            // 
+            this.btnLock1.Location = new System.Drawing.Point(698, 71);
+            this.btnLock1.Name = "btnLock1";
+            this.btnLock1.Size = new System.Drawing.Size(47, 20);
+            this.btnLock1.TabIndex = 80;
+            this.btnLock1.Text = "Lock";
+            this.btnLock1.UseVisualStyleBackColor = true;
+            // 
+            // nudE2M1
+            // 
+            this.nudE2M1.Location = new System.Drawing.Point(637, 73);
+            this.nudE2M1.Name = "nudE2M1";
+            this.nudE2M1.Size = new System.Drawing.Size(40, 20);
+            this.nudE2M1.TabIndex = 79;
+            // 
+            // nudE1M1
+            // 
+            this.nudE1M1.Location = new System.Drawing.Point(498, 73);
+            this.nudE1M1.Name = "nudE1M1";
+            this.nudE1M1.Size = new System.Drawing.Size(40, 20);
+            this.nudE1M1.TabIndex = 78;
+            // 
+            // lblE2M1
+            // 
+            this.lblE2M1.AutoSize = true;
+            this.lblE2M1.Location = new System.Drawing.Point(558, 75);
+            this.lblE2M1.Name = "lblE2M1";
+            this.lblE2M1.Size = new System.Drawing.Size(49, 13);
+            this.lblE2M1.TabIndex = 77;
+            this.lblE2M1.Text = "Equipe 2";
+            // 
+            // lblE1M1
+            // 
+            this.lblE1M1.AutoSize = true;
+            this.lblE1M1.Location = new System.Drawing.Point(419, 75);
+            this.lblE1M1.Name = "lblE1M1";
+            this.lblE1M1.Size = new System.Drawing.Size(49, 13);
+            this.lblE1M1.TabIndex = 76;
+            this.lblE1M1.Text = "Equipe 1";
             // 
             // lblPointsE5
             // 
@@ -448,517 +959,6 @@
             this.tclOnglets.Size = new System.Drawing.Size(844, 459);
             this.tclOnglets.TabIndex = 26;
             // 
-            // btnCalculer
-            // 
-            this.btnCalculer.Location = new System.Drawing.Point(532, 350);
-            this.btnCalculer.Name = "btnCalculer";
-            this.btnCalculer.Size = new System.Drawing.Size(131, 26);
-            this.btnCalculer.TabIndex = 126;
-            this.btnCalculer.Text = "Calculer";
-            this.btnCalculer.UseVisualStyleBackColor = true;
-            this.btnCalculer.Click += new System.EventHandler(this.btnCalculer_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(698, 305);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(47, 20);
-            this.button5.TabIndex = 125;
-            this.button5.Text = "Lock";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // nudE5M10
-            // 
-            this.nudE5M10.Location = new System.Drawing.Point(637, 307);
-            this.nudE5M10.Name = "nudE5M10";
-            this.nudE5M10.Size = new System.Drawing.Size(40, 20);
-            this.nudE5M10.TabIndex = 124;
-            // 
-            // nudE2M10
-            // 
-            this.nudE2M10.Location = new System.Drawing.Point(498, 307);
-            this.nudE2M10.Name = "nudE2M10";
-            this.nudE2M10.Size = new System.Drawing.Size(40, 20);
-            this.nudE2M10.TabIndex = 123;
-            // 
-            // lblE5M10
-            // 
-            this.lblE5M10.AutoSize = true;
-            this.lblE5M10.Location = new System.Drawing.Point(558, 309);
-            this.lblE5M10.Name = "lblE5M10";
-            this.lblE5M10.Size = new System.Drawing.Size(49, 13);
-            this.lblE5M10.TabIndex = 122;
-            this.lblE5M10.Text = "Equipe 5";
-            // 
-            // lblE2M10
-            // 
-            this.lblE2M10.AutoSize = true;
-            this.lblE2M10.Location = new System.Drawing.Point(419, 309);
-            this.lblE2M10.Name = "lblE2M10";
-            this.lblE2M10.Size = new System.Drawing.Size(49, 13);
-            this.lblE2M10.TabIndex = 121;
-            this.lblE2M10.Text = "Equipe 2";
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(698, 279);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(47, 20);
-            this.button6.TabIndex = 120;
-            this.button6.Text = "Lock";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // nudE4M9
-            // 
-            this.nudE4M9.Location = new System.Drawing.Point(637, 281);
-            this.nudE4M9.Name = "nudE4M9";
-            this.nudE4M9.Size = new System.Drawing.Size(40, 20);
-            this.nudE4M9.TabIndex = 119;
-            // 
-            // nudE1M9
-            // 
-            this.nudE1M9.Location = new System.Drawing.Point(498, 281);
-            this.nudE1M9.Name = "nudE1M9";
-            this.nudE1M9.Size = new System.Drawing.Size(40, 20);
-            this.nudE1M9.TabIndex = 118;
-            // 
-            // lblE4M9
-            // 
-            this.lblE4M9.AutoSize = true;
-            this.lblE4M9.Location = new System.Drawing.Point(558, 283);
-            this.lblE4M9.Name = "lblE4M9";
-            this.lblE4M9.Size = new System.Drawing.Size(49, 13);
-            this.lblE4M9.TabIndex = 117;
-            this.lblE4M9.Text = "Equipe 4";
-            // 
-            // lblE1M9
-            // 
-            this.lblE1M9.AutoSize = true;
-            this.lblE1M9.Location = new System.Drawing.Point(419, 283);
-            this.lblE1M9.Name = "lblE1M9";
-            this.lblE1M9.Size = new System.Drawing.Size(49, 13);
-            this.lblE1M9.TabIndex = 116;
-            this.lblE1M9.Text = "Equipe 1";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(698, 253);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(47, 20);
-            this.button7.TabIndex = 115;
-            this.button7.Text = "Lock";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // nudE5M8
-            // 
-            this.nudE5M8.Location = new System.Drawing.Point(637, 255);
-            this.nudE5M8.Name = "nudE5M8";
-            this.nudE5M8.Size = new System.Drawing.Size(40, 20);
-            this.nudE5M8.TabIndex = 114;
-            // 
-            // nudE3M8
-            // 
-            this.nudE3M8.Location = new System.Drawing.Point(498, 255);
-            this.nudE3M8.Name = "nudE3M8";
-            this.nudE3M8.Size = new System.Drawing.Size(40, 20);
-            this.nudE3M8.TabIndex = 113;
-            // 
-            // lblE5M8
-            // 
-            this.lblE5M8.AutoSize = true;
-            this.lblE5M8.Location = new System.Drawing.Point(558, 257);
-            this.lblE5M8.Name = "lblE5M8";
-            this.lblE5M8.Size = new System.Drawing.Size(49, 13);
-            this.lblE5M8.TabIndex = 112;
-            this.lblE5M8.Text = "Equipe 5";
-            // 
-            // lblE3M8
-            // 
-            this.lblE3M8.AutoSize = true;
-            this.lblE3M8.Location = new System.Drawing.Point(419, 257);
-            this.lblE3M8.Name = "lblE3M8";
-            this.lblE3M8.Size = new System.Drawing.Size(49, 13);
-            this.lblE3M8.TabIndex = 111;
-            this.lblE3M8.Text = "Equipe 3";
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(698, 227);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(47, 20);
-            this.button8.TabIndex = 110;
-            this.button8.Text = "Lock";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // nudE4M7
-            // 
-            this.nudE4M7.Location = new System.Drawing.Point(637, 229);
-            this.nudE4M7.Name = "nudE4M7";
-            this.nudE4M7.Size = new System.Drawing.Size(40, 20);
-            this.nudE4M7.TabIndex = 109;
-            // 
-            // nudE2M7
-            // 
-            this.nudE2M7.Location = new System.Drawing.Point(498, 229);
-            this.nudE2M7.Name = "nudE2M7";
-            this.nudE2M7.Size = new System.Drawing.Size(40, 20);
-            this.nudE2M7.TabIndex = 108;
-            // 
-            // lblE4M7
-            // 
-            this.lblE4M7.AutoSize = true;
-            this.lblE4M7.Location = new System.Drawing.Point(558, 231);
-            this.lblE4M7.Name = "lblE4M7";
-            this.lblE4M7.Size = new System.Drawing.Size(49, 13);
-            this.lblE4M7.TabIndex = 107;
-            this.lblE4M7.Text = "Equipe 4";
-            // 
-            // lblE2M7
-            // 
-            this.lblE2M7.AutoSize = true;
-            this.lblE2M7.Location = new System.Drawing.Point(419, 231);
-            this.lblE2M7.Name = "lblE2M7";
-            this.lblE2M7.Size = new System.Drawing.Size(49, 13);
-            this.lblE2M7.TabIndex = 106;
-            this.lblE2M7.Text = "Equipe 2";
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(698, 201);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(47, 20);
-            this.button9.TabIndex = 105;
-            this.button9.Text = "Lock";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // nudE3M6
-            // 
-            this.nudE3M6.Location = new System.Drawing.Point(637, 203);
-            this.nudE3M6.Name = "nudE3M6";
-            this.nudE3M6.Size = new System.Drawing.Size(40, 20);
-            this.nudE3M6.TabIndex = 104;
-            // 
-            // nudE1M6
-            // 
-            this.nudE1M6.Location = new System.Drawing.Point(498, 203);
-            this.nudE1M6.Name = "nudE1M6";
-            this.nudE1M6.Size = new System.Drawing.Size(40, 20);
-            this.nudE1M6.TabIndex = 103;
-            // 
-            // lblE3M6
-            // 
-            this.lblE3M6.AutoSize = true;
-            this.lblE3M6.Location = new System.Drawing.Point(558, 205);
-            this.lblE3M6.Name = "lblE3M6";
-            this.lblE3M6.Size = new System.Drawing.Size(49, 13);
-            this.lblE3M6.TabIndex = 102;
-            this.lblE3M6.Text = "Equipe 3";
-            // 
-            // lblE1M6
-            // 
-            this.lblE1M6.AutoSize = true;
-            this.lblE1M6.Location = new System.Drawing.Point(419, 205);
-            this.lblE1M6.Name = "lblE1M6";
-            this.lblE1M6.Size = new System.Drawing.Size(49, 13);
-            this.lblE1M6.TabIndex = 101;
-            this.lblE1M6.Text = "Equipe 1";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(698, 175);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(47, 20);
-            this.button4.TabIndex = 100;
-            this.button4.Text = "Lock";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // nudE5M5
-            // 
-            this.nudE5M5.Location = new System.Drawing.Point(637, 177);
-            this.nudE5M5.Name = "nudE5M5";
-            this.nudE5M5.Size = new System.Drawing.Size(40, 20);
-            this.nudE5M5.TabIndex = 99;
-            // 
-            // nudE4M5
-            // 
-            this.nudE4M5.Location = new System.Drawing.Point(498, 177);
-            this.nudE4M5.Name = "nudE4M5";
-            this.nudE4M5.Size = new System.Drawing.Size(40, 20);
-            this.nudE4M5.TabIndex = 98;
-            // 
-            // lblE5M5
-            // 
-            this.lblE5M5.AutoSize = true;
-            this.lblE5M5.Location = new System.Drawing.Point(558, 179);
-            this.lblE5M5.Name = "lblE5M5";
-            this.lblE5M5.Size = new System.Drawing.Size(49, 13);
-            this.lblE5M5.TabIndex = 97;
-            this.lblE5M5.Text = "Equipe 5";
-            // 
-            // lblE4M5
-            // 
-            this.lblE4M5.AutoSize = true;
-            this.lblE4M5.Location = new System.Drawing.Point(419, 179);
-            this.lblE4M5.Name = "lblE4M5";
-            this.lblE4M5.Size = new System.Drawing.Size(49, 13);
-            this.lblE4M5.TabIndex = 96;
-            this.lblE4M5.Text = "Equipe 4";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(698, 149);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(47, 20);
-            this.button3.TabIndex = 95;
-            this.button3.Text = "Lock";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // nudE3M4
-            // 
-            this.nudE3M4.Location = new System.Drawing.Point(637, 151);
-            this.nudE3M4.Name = "nudE3M4";
-            this.nudE3M4.Size = new System.Drawing.Size(40, 20);
-            this.nudE3M4.TabIndex = 94;
-            // 
-            // nudE2M4
-            // 
-            this.nudE2M4.Location = new System.Drawing.Point(498, 151);
-            this.nudE2M4.Name = "nudE2M4";
-            this.nudE2M4.Size = new System.Drawing.Size(40, 20);
-            this.nudE2M4.TabIndex = 93;
-            // 
-            // lblE3M4
-            // 
-            this.lblE3M4.AutoSize = true;
-            this.lblE3M4.Location = new System.Drawing.Point(558, 153);
-            this.lblE3M4.Name = "lblE3M4";
-            this.lblE3M4.Size = new System.Drawing.Size(49, 13);
-            this.lblE3M4.TabIndex = 92;
-            this.lblE3M4.Text = "Equipe 3";
-            // 
-            // lblE2M4
-            // 
-            this.lblE2M4.AutoSize = true;
-            this.lblE2M4.Location = new System.Drawing.Point(419, 153);
-            this.lblE2M4.Name = "lblE2M4";
-            this.lblE2M4.Size = new System.Drawing.Size(49, 13);
-            this.lblE2M4.TabIndex = 91;
-            this.lblE2M4.Text = "Equipe 2";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(698, 123);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(47, 20);
-            this.button2.TabIndex = 90;
-            this.button2.Text = "Lock";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // nudE1M3
-            // 
-            this.nudE1M3.Location = new System.Drawing.Point(637, 125);
-            this.nudE1M3.Name = "nudE1M3";
-            this.nudE1M3.Size = new System.Drawing.Size(40, 20);
-            this.nudE1M3.TabIndex = 89;
-            // 
-            // nudE5M3
-            // 
-            this.nudE5M3.Location = new System.Drawing.Point(498, 125);
-            this.nudE5M3.Name = "nudE5M3";
-            this.nudE5M3.Size = new System.Drawing.Size(40, 20);
-            this.nudE5M3.TabIndex = 88;
-            // 
-            // lblE1M3
-            // 
-            this.lblE1M3.AutoSize = true;
-            this.lblE1M3.Location = new System.Drawing.Point(558, 127);
-            this.lblE1M3.Name = "lblE1M3";
-            this.lblE1M3.Size = new System.Drawing.Size(49, 13);
-            this.lblE1M3.TabIndex = 87;
-            this.lblE1M3.Text = "Equipe 1";
-            // 
-            // lblE5M3
-            // 
-            this.lblE5M3.AutoSize = true;
-            this.lblE5M3.Location = new System.Drawing.Point(419, 127);
-            this.lblE5M3.Name = "lblE5M3";
-            this.lblE5M3.Size = new System.Drawing.Size(49, 13);
-            this.lblE5M3.TabIndex = 86;
-            this.lblE5M3.Text = "Equipe 5";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(698, 97);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(47, 20);
-            this.button1.TabIndex = 85;
-            this.button1.Text = "Lock";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // nudE4M2
-            // 
-            this.nudE4M2.Location = new System.Drawing.Point(637, 99);
-            this.nudE4M2.Name = "nudE4M2";
-            this.nudE4M2.Size = new System.Drawing.Size(40, 20);
-            this.nudE4M2.TabIndex = 84;
-            // 
-            // nudE3M2
-            // 
-            this.nudE3M2.Location = new System.Drawing.Point(498, 99);
-            this.nudE3M2.Name = "nudE3M2";
-            this.nudE3M2.Size = new System.Drawing.Size(40, 20);
-            this.nudE3M2.TabIndex = 83;
-            // 
-            // lblE4M2
-            // 
-            this.lblE4M2.AutoSize = true;
-            this.lblE4M2.Location = new System.Drawing.Point(558, 101);
-            this.lblE4M2.Name = "lblE4M2";
-            this.lblE4M2.Size = new System.Drawing.Size(49, 13);
-            this.lblE4M2.TabIndex = 82;
-            this.lblE4M2.Text = "Equipe 4";
-            // 
-            // lblE3M2
-            // 
-            this.lblE3M2.AutoSize = true;
-            this.lblE3M2.Location = new System.Drawing.Point(419, 101);
-            this.lblE3M2.Name = "lblE3M2";
-            this.lblE3M2.Size = new System.Drawing.Size(49, 13);
-            this.lblE3M2.TabIndex = 81;
-            this.lblE3M2.Text = "Equipe 3";
-            // 
-            // btnLock
-            // 
-            this.btnLock.Location = new System.Drawing.Point(698, 71);
-            this.btnLock.Name = "btnLock";
-            this.btnLock.Size = new System.Drawing.Size(47, 20);
-            this.btnLock.TabIndex = 80;
-            this.btnLock.Text = "Lock";
-            this.btnLock.UseVisualStyleBackColor = true;
-            // 
-            // nudE2M1
-            // 
-            this.nudE2M1.Location = new System.Drawing.Point(637, 73);
-            this.nudE2M1.Name = "nudE2M1";
-            this.nudE2M1.Size = new System.Drawing.Size(40, 20);
-            this.nudE2M1.TabIndex = 79;
-            // 
-            // nudE1M1
-            // 
-            this.nudE1M1.Location = new System.Drawing.Point(498, 73);
-            this.nudE1M1.Name = "nudE1M1";
-            this.nudE1M1.Size = new System.Drawing.Size(40, 20);
-            this.nudE1M1.TabIndex = 78;
-            // 
-            // lblE2M1
-            // 
-            this.lblE2M1.AutoSize = true;
-            this.lblE2M1.Location = new System.Drawing.Point(558, 75);
-            this.lblE2M1.Name = "lblE2M1";
-            this.lblE2M1.Size = new System.Drawing.Size(49, 13);
-            this.lblE2M1.TabIndex = 77;
-            this.lblE2M1.Text = "Equipe 2";
-            // 
-            // lblE1M1
-            // 
-            this.lblE1M1.AutoSize = true;
-            this.lblE1M1.Location = new System.Drawing.Point(419, 75);
-            this.lblE1M1.Name = "lblE1M1";
-            this.lblE1M1.Size = new System.Drawing.Size(49, 13);
-            this.lblE1M1.TabIndex = 76;
-            this.lblE1M1.Text = "Equipe 1";
-            // 
-            // tbxWinner
-            // 
-            this.tbxWinner.Location = new System.Drawing.Point(614, 241);
-            this.tbxWinner.Name = "tbxWinner";
-            this.tbxWinner.Size = new System.Drawing.Size(100, 20);
-            this.tbxWinner.TabIndex = 25;
-            // 
-            // tbxWM5
-            // 
-            this.tbxWM5.Location = new System.Drawing.Point(438, 324);
-            this.tbxWM5.Name = "tbxWM5";
-            this.tbxWM5.Size = new System.Drawing.Size(100, 20);
-            this.tbxWM5.TabIndex = 24;
-            // 
-            // tbxWM4
-            // 
-            this.tbxWM4.Location = new System.Drawing.Point(438, 139);
-            this.tbxWM4.Name = "tbxWM4";
-            this.tbxWM4.Size = new System.Drawing.Size(100, 20);
-            this.tbxWM4.TabIndex = 23;
-            // 
-            // tbxLM2
-            // 
-            this.tbxLM2.Location = new System.Drawing.Point(278, 353);
-            this.tbxLM2.Name = "tbxLM2";
-            this.tbxLM2.Size = new System.Drawing.Size(100, 20);
-            this.tbxLM2.TabIndex = 22;
-            // 
-            // tbxWM3
-            // 
-            this.tbxWM3.Location = new System.Drawing.Point(278, 308);
-            this.tbxWM3.Name = "tbxWM3";
-            this.tbxWM3.Size = new System.Drawing.Size(100, 20);
-            this.tbxWM3.TabIndex = 21;
-            // 
-            // tbxWM2
-            // 
-            this.tbxWM2.Location = new System.Drawing.Point(278, 195);
-            this.tbxWM2.Name = "tbxWM2";
-            this.tbxWM2.Size = new System.Drawing.Size(100, 20);
-            this.tbxWM2.TabIndex = 20;
-            // 
-            // tbxWM1
-            // 
-            this.tbxWM1.Location = new System.Drawing.Point(278, 83);
-            this.tbxWM1.Name = "tbxWM1";
-            this.tbxWM1.Size = new System.Drawing.Size(100, 20);
-            this.tbxWM1.TabIndex = 19;
-            // 
-            // tbxLM1
-            // 
-            this.tbxLM1.Location = new System.Drawing.Point(123, 326);
-            this.tbxLM1.Name = "tbxLM1";
-            this.tbxLM1.Size = new System.Drawing.Size(100, 20);
-            this.tbxLM1.TabIndex = 18;
-            // 
-            // tbx5eme
-            // 
-            this.tbx5eme.Location = new System.Drawing.Point(123, 276);
-            this.tbx5eme.Name = "tbx5eme";
-            this.tbx5eme.Size = new System.Drawing.Size(100, 20);
-            this.tbx5eme.TabIndex = 17;
-            // 
-            // tbx4eme
-            // 
-            this.tbx4eme.Location = new System.Drawing.Point(123, 217);
-            this.tbx4eme.Name = "tbx4eme";
-            this.tbx4eme.Size = new System.Drawing.Size(100, 20);
-            this.tbx4eme.TabIndex = 16;
-            // 
-            // tbx2eme
-            // 
-            this.tbx2eme.Location = new System.Drawing.Point(123, 167);
-            this.tbx2eme.Name = "tbx2eme";
-            this.tbx2eme.Size = new System.Drawing.Size(100, 20);
-            this.tbx2eme.TabIndex = 15;
-            // 
-            // tbx3eme
-            // 
-            this.tbx3eme.Location = new System.Drawing.Point(123, 110);
-            this.tbx3eme.Name = "tbx3eme";
-            this.tbx3eme.Size = new System.Drawing.Size(100, 20);
-            this.tbx3eme.TabIndex = 14;
-            // 
-            // tbx1er
-            // 
-            this.tbx1er.Location = new System.Drawing.Point(123, 60);
-            this.tbx1er.Name = "tbx1er";
-            this.tbx1er.Size = new System.Drawing.Size(100, 20);
-            this.tbx1er.TabIndex = 13;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -971,7 +971,6 @@
             this.tbComposition.PerformLayout();
             this.tbAffichage.ResumeLayout(false);
             this.tbAffichage.PerformLayout();
-            this.tclOnglets.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nudE5M10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudE2M10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudE4M9)).EndInit();
@@ -992,6 +991,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudE3M2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudE2M1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudE1M1)).EndInit();
+            this.tclOnglets.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1023,52 +1023,52 @@
         private System.Windows.Forms.Label lblPointsE2;
         private System.Windows.Forms.Label lblPointsE1;
         private System.Windows.Forms.Button btnCalculer;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnLock10;
         private System.Windows.Forms.NumericUpDown nudE5M10;
         private System.Windows.Forms.NumericUpDown nudE2M10;
         private System.Windows.Forms.Label lblE5M10;
         private System.Windows.Forms.Label lblE2M10;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnLock9;
         private System.Windows.Forms.NumericUpDown nudE4M9;
         private System.Windows.Forms.NumericUpDown nudE1M9;
         private System.Windows.Forms.Label lblE4M9;
         private System.Windows.Forms.Label lblE1M9;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnLock8;
         private System.Windows.Forms.NumericUpDown nudE5M8;
         private System.Windows.Forms.NumericUpDown nudE3M8;
         private System.Windows.Forms.Label lblE5M8;
         private System.Windows.Forms.Label lblE3M8;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnLock7;
         private System.Windows.Forms.NumericUpDown nudE4M7;
         private System.Windows.Forms.NumericUpDown nudE2M7;
         private System.Windows.Forms.Label lblE4M7;
         private System.Windows.Forms.Label lblE2M7;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnLock6;
         private System.Windows.Forms.NumericUpDown nudE3M6;
         private System.Windows.Forms.NumericUpDown nudE1M6;
         private System.Windows.Forms.Label lblE3M6;
         private System.Windows.Forms.Label lblE1M6;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnLock5;
         private System.Windows.Forms.NumericUpDown nudE5M5;
         private System.Windows.Forms.NumericUpDown nudE4M5;
         private System.Windows.Forms.Label lblE5M5;
         private System.Windows.Forms.Label lblE4M5;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnLock4;
         private System.Windows.Forms.NumericUpDown nudE3M4;
         private System.Windows.Forms.NumericUpDown nudE2M4;
         private System.Windows.Forms.Label lblE3M4;
         private System.Windows.Forms.Label lblE2M4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnLock3;
         private System.Windows.Forms.NumericUpDown nudE1M3;
         private System.Windows.Forms.NumericUpDown nudE5M3;
         private System.Windows.Forms.Label lblE1M3;
         private System.Windows.Forms.Label lblE5M3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLock2;
         private System.Windows.Forms.NumericUpDown nudE4M2;
         private System.Windows.Forms.NumericUpDown nudE3M2;
         private System.Windows.Forms.Label lblE4M2;
         private System.Windows.Forms.Label lblE3M2;
-        private System.Windows.Forms.Button btnLock;
+        private System.Windows.Forms.Button btnLock1;
         private System.Windows.Forms.NumericUpDown nudE2M1;
         private System.Windows.Forms.NumericUpDown nudE1M1;
         private System.Windows.Forms.Label lblE2M1;
