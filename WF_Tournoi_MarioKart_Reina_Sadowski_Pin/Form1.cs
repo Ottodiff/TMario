@@ -113,6 +113,13 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             List<string> E5 = pl.GetPlayerE5();
             lblNomEquipe5.Text = E5[0] + " " + E5[1];
             btnCreationEquipe.Enabled = false;
+
+            //ligne 1
+            lblE1M1.Visible = true;
+            nudE1M1.Visible = true;
+            lblE2M1.Visible = true;
+            nudE2M1.Visible = true;
+            btnLock1.Visible = true;
         }
 
         private void btnCalculer_Click(object sender, EventArgs e)
@@ -128,6 +135,132 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             {
                 tbx1er.Text = lblNomEquipe1.Text;
             }
+            btnCalculer.Enabled = false;
+        }
+
+        private void btnLock1_Click(object sender, EventArgs e)
+        {
+            //ligne 2
+            lblE3M2.Visible = true;
+            nudE3M2.Visible = true;
+            lblE4M2.Visible = true;
+            nudE4M2.Visible = true;
+            btnLock2.Visible = true;
+            nudE1M1.Enabled = false;
+            nudE2M1.Enabled = false;
+            btnLock1.Enabled = false;
+        }
+
+        private void btnLock2_Click(object sender, EventArgs e)
+        {
+            //ligne 3
+            lblE5M3.Visible = true;
+            nudE5M3.Visible = true;
+            lblE1M3.Visible = true;
+            nudE1M3.Visible = true;
+            btnLock3.Visible = true;
+            nudE3M2.Enabled = false;
+            nudE4M2.Enabled = false;
+            btnLock2.Enabled = false;
+        }
+
+        private void btnLock3_Click(object sender, EventArgs e)
+        {
+            //ligne 4
+            lblE2M4.Visible = true;
+            nudE2M4.Visible = true;
+            lblE3M4.Visible = true;
+            nudE3M4.Visible = true;
+            btnLock4.Visible = true;
+            nudE5M3.Enabled = false;
+            nudE1M3.Enabled = false;
+            btnLock3.Enabled = false;
+        }
+
+        private void btnLock4_Click(object sender, EventArgs e)
+        {
+            //ligne 5
+            lblE4M5.Visible = true;
+            nudE4M5.Visible = true;
+            lblE5M5.Visible = true;
+            nudE5M5.Visible = true;
+            btnLock5.Visible = true;
+            nudE2M4.Enabled = false;
+            nudE3M4.Enabled = false;
+            btnLock4.Enabled = false;
+        }
+
+        private void btnLock5_Click(object sender, EventArgs e)
+        {
+            //ligne 6
+            lblE1M6.Visible = true;
+            nudE1M6.Visible = true;
+            lblE3M6.Visible = true;
+            nudE3M6.Visible = true;
+            btnLock6.Visible = true;
+            nudE4M5.Enabled = false;
+            nudE5M5.Enabled = false;
+            btnLock5.Enabled = false;
+        }
+
+        private void btnLock6_Click(object sender, EventArgs e)
+        {
+            //ligne 7
+            lblE2M7.Visible = true;
+            nudE2M7.Visible = true;
+            lblE4M7.Visible = true;
+            nudE4M7.Visible = true;
+            btnLock7.Visible = true;
+            nudE1M6.Enabled = false;
+            nudE3M6.Enabled = false;
+            btnLock6.Enabled = false;
+        }
+
+        private void btnLock7_Click(object sender, EventArgs e)
+        {
+            //ligne 8
+            lblE3M8.Visible = true;
+            nudE3M8.Visible = true;
+            lblE5M8.Visible = true;
+            nudE5M8.Visible = true;
+            btnLock8.Visible = true;
+            nudE2M7.Enabled = false;
+            nudE4M7.Enabled = false;
+            btnLock7.Enabled = false;
+        }
+
+        private void btnLock8_Click(object sender, EventArgs e)
+        {
+            //ligne 9
+            lblE1M9.Visible = true;
+            nudE1M9.Visible = true;
+            lblE4M9.Visible = true;
+            nudE4M9.Visible = true;
+            btnLock9.Visible = true;
+            nudE3M8.Enabled = false;
+            nudE5M8.Enabled = false;
+            btnLock8.Enabled = false;
+        }
+
+        private void btnLock9_Click(object sender, EventArgs e)
+        {
+            //ligne 10
+            lblE2M10.Visible = true;
+            nudE2M10.Visible = true;
+            lblE5M10.Visible = true;
+            nudE5M10.Visible = true;
+            btnLock10.Visible = true;
+            nudE1M9.Enabled = false;
+            nudE4M9.Enabled = false;
+            btnLock9.Enabled = false;
+        }
+
+        private void btnLock10_Click(object sender, EventArgs e)
+        {
+            btnCalculer.Visible = true;
+            nudE2M10.Enabled = false;
+            nudE5M10.Enabled = false;
+            btnLock10.Enabled = false;
         }
     }
 }

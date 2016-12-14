@@ -372,6 +372,7 @@
             this.btnLock10.TabIndex = 125;
             this.btnLock10.Text = "Lock";
             this.btnLock10.UseVisualStyleBackColor = true;
+            this.btnLock10.Click += new System.EventHandler(this.btnLock10_Click);
             // 
             // nudE5M10
             // 
@@ -413,6 +414,7 @@
             this.btnLock9.TabIndex = 120;
             this.btnLock9.Text = "Lock";
             this.btnLock9.UseVisualStyleBackColor = true;
+            this.btnLock9.Click += new System.EventHandler(this.btnLock9_Click);
             // 
             // nudE4M9
             // 
@@ -454,6 +456,7 @@
             this.btnLock8.TabIndex = 115;
             this.btnLock8.Text = "Lock";
             this.btnLock8.UseVisualStyleBackColor = true;
+            this.btnLock8.Click += new System.EventHandler(this.btnLock8_Click);
             // 
             // nudE5M8
             // 
@@ -495,6 +498,7 @@
             this.btnLock7.TabIndex = 110;
             this.btnLock7.Text = "Lock";
             this.btnLock7.UseVisualStyleBackColor = true;
+            this.btnLock7.Click += new System.EventHandler(this.btnLock7_Click);
             // 
             // nudE4M7
             // 
@@ -536,6 +540,7 @@
             this.btnLock6.TabIndex = 105;
             this.btnLock6.Text = "Lock";
             this.btnLock6.UseVisualStyleBackColor = true;
+            this.btnLock6.Click += new System.EventHandler(this.btnLock6_Click);
             // 
             // nudE3M6
             // 
@@ -577,6 +582,7 @@
             this.btnLock5.TabIndex = 100;
             this.btnLock5.Text = "Lock";
             this.btnLock5.UseVisualStyleBackColor = true;
+            this.btnLock5.Click += new System.EventHandler(this.btnLock5_Click);
             // 
             // nudE5M5
             // 
@@ -618,6 +624,7 @@
             this.btnLock4.TabIndex = 95;
             this.btnLock4.Text = "Lock";
             this.btnLock4.UseVisualStyleBackColor = true;
+            this.btnLock4.Click += new System.EventHandler(this.btnLock4_Click);
             // 
             // nudE3M4
             // 
@@ -659,6 +666,7 @@
             this.btnLock3.TabIndex = 90;
             this.btnLock3.Text = "Lock";
             this.btnLock3.UseVisualStyleBackColor = true;
+            this.btnLock3.Click += new System.EventHandler(this.btnLock3_Click);
             // 
             // nudE1M3
             // 
@@ -700,6 +708,7 @@
             this.btnLock2.TabIndex = 85;
             this.btnLock2.Text = "Lock";
             this.btnLock2.UseVisualStyleBackColor = true;
+            this.btnLock2.Click += new System.EventHandler(this.btnLock2_Click);
             // 
             // nudE4M2
             // 
@@ -741,6 +750,7 @@
             this.btnLock1.TabIndex = 80;
             this.btnLock1.Text = "Lock";
             this.btnLock1.UseVisualStyleBackColor = true;
+            this.btnLock1.Click += new System.EventHandler(this.btnLock1_Click);
             // 
             // nudE2M1
             // 
