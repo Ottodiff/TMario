@@ -366,7 +366,7 @@
             // 
             // btnLock10
             // 
-            this.btnLock10.Location = new System.Drawing.Point(698, 305);
+            this.btnLock10.Location = new System.Drawing.Point(739, 305);
             this.btnLock10.Name = "btnLock10";
             this.btnLock10.Size = new System.Drawing.Size(47, 20);
             this.btnLock10.TabIndex = 125;
@@ -376,14 +376,14 @@
             // 
             // nudE5M10
             // 
-            this.nudE5M10.Location = new System.Drawing.Point(637, 307);
+            this.nudE5M10.Location = new System.Drawing.Point(678, 307);
             this.nudE5M10.Name = "nudE5M10";
             this.nudE5M10.Size = new System.Drawing.Size(40, 20);
             this.nudE5M10.TabIndex = 124;
             // 
             // nudE2M10
             // 
-            this.nudE2M10.Location = new System.Drawing.Point(498, 307);
+            this.nudE2M10.Location = new System.Drawing.Point(482, 307);
             this.nudE2M10.Name = "nudE2M10";
             this.nudE2M10.Size = new System.Drawing.Size(40, 20);
             this.nudE2M10.TabIndex = 123;
@@ -400,7 +400,7 @@
             // lblE2M10
             // 
             this.lblE2M10.AutoSize = true;
-            this.lblE2M10.Location = new System.Drawing.Point(419, 309);
+            this.lblE2M10.Location = new System.Drawing.Point(356, 309);
             this.lblE2M10.Name = "lblE2M10";
             this.lblE2M10.Size = new System.Drawing.Size(49, 13);
             this.lblE2M10.TabIndex = 121;
@@ -408,7 +408,7 @@
             // 
             // btnLock9
             // 
-            this.btnLock9.Location = new System.Drawing.Point(698, 279);
+            this.btnLock9.Location = new System.Drawing.Point(739, 279);
             this.btnLock9.Name = "btnLock9";
             this.btnLock9.Size = new System.Drawing.Size(47, 20);
             this.btnLock9.TabIndex = 120;
@@ -418,14 +418,14 @@
             // 
             // nudE4M9
             // 
-            this.nudE4M9.Location = new System.Drawing.Point(637, 281);
+            this.nudE4M9.Location = new System.Drawing.Point(678, 281);
             this.nudE4M9.Name = "nudE4M9";
             this.nudE4M9.Size = new System.Drawing.Size(40, 20);
             this.nudE4M9.TabIndex = 119;
             // 
             // nudE1M9
             // 
-            this.nudE1M9.Location = new System.Drawing.Point(498, 281);
+            this.nudE1M9.Location = new System.Drawing.Point(482, 281);
             this.nudE1M9.Name = "nudE1M9";
             this.nudE1M9.Size = new System.Drawing.Size(40, 20);
             this.nudE1M9.TabIndex = 118;
@@ -442,7 +442,7 @@
             // lblE1M9
             // 
             this.lblE1M9.AutoSize = true;
-            this.lblE1M9.Location = new System.Drawing.Point(419, 283);
+            this.lblE1M9.Location = new System.Drawing.Point(356, 283);
             this.lblE1M9.Name = "lblE1M9";
             this.lblE1M9.Size = new System.Drawing.Size(49, 13);
             this.lblE1M9.TabIndex = 116;
@@ -450,7 +450,7 @@
             // 
             // btnLock8
             // 
-            this.btnLock8.Location = new System.Drawing.Point(698, 253);
+            this.btnLock8.Location = new System.Drawing.Point(739, 253);
             this.btnLock8.Name = "btnLock8";
             this.btnLock8.Size = new System.Drawing.Size(47, 20);
             this.btnLock8.TabIndex = 115;
@@ -460,14 +460,14 @@
             // 
             // nudE5M8
             // 
-            this.nudE5M8.Location = new System.Drawing.Point(637, 255);
+            this.nudE5M8.Location = new System.Drawing.Point(678, 255);
             this.nudE5M8.Name = "nudE5M8";
             this.nudE5M8.Size = new System.Drawing.Size(40, 20);
             this.nudE5M8.TabIndex = 114;
             // 
             // nudE3M8
             // 
-            this.nudE3M8.Location = new System.Drawing.Point(498, 255);
+            this.nudE3M8.Location = new System.Drawing.Point(482, 255);
             this.nudE3M8.Name = "nudE3M8";
             this.nudE3M8.Size = new System.Drawing.Size(40, 20);
             this.nudE3M8.TabIndex = 113;
@@ -484,7 +484,7 @@
             // lblE3M8
             // 
             this.lblE3M8.AutoSize = true;
-            this.lblE3M8.Location = new System.Drawing.Point(419, 257);
+            this.lblE3M8.Location = new System.Drawing.Point(356, 257);
             this.lblE3M8.Name = "lblE3M8";
             this.lblE3M8.Size = new System.Drawing.Size(49, 13);
             this.lblE3M8.TabIndex = 111;
@@ -492,7 +492,7 @@
             // 
             // btnLock7
             // 
-            this.btnLock7.Location = new System.Drawing.Point(698, 227);
+            this.btnLock7.Location = new System.Drawing.Point(739, 227);
             this.btnLock7.Name = "btnLock7";
             this.btnLock7.Size = new System.Drawing.Size(47, 20);
             this.btnLock7.TabIndex = 110;
@@ -502,14 +502,14 @@
             // 
             // nudE4M7
             // 
-            this.nudE4M7.Location = new System.Drawing.Point(637, 229);
+            this.nudE4M7.Location = new System.Drawing.Point(678, 229);
             this.nudE4M7.Name = "nudE4M7";
             this.nudE4M7.Size = new System.Drawing.Size(40, 20);
             this.nudE4M7.TabIndex = 109;
             // 
             // nudE2M7
             // 
-            this.nudE2M7.Location = new System.Drawing.Point(498, 229);
+            this.nudE2M7.Location = new System.Drawing.Point(482, 229);
             this.nudE2M7.Name = "nudE2M7";
             this.nudE2M7.Size = new System.Drawing.Size(40, 20);
             this.nudE2M7.TabIndex = 108;
@@ -526,7 +526,7 @@
             // lblE2M7
             // 
             this.lblE2M7.AutoSize = true;
-            this.lblE2M7.Location = new System.Drawing.Point(419, 231);
+            this.lblE2M7.Location = new System.Drawing.Point(356, 231);
             this.lblE2M7.Name = "lblE2M7";
             this.lblE2M7.Size = new System.Drawing.Size(49, 13);
             this.lblE2M7.TabIndex = 106;
@@ -534,7 +534,7 @@
             // 
             // btnLock6
             // 
-            this.btnLock6.Location = new System.Drawing.Point(698, 201);
+            this.btnLock6.Location = new System.Drawing.Point(739, 201);
             this.btnLock6.Name = "btnLock6";
             this.btnLock6.Size = new System.Drawing.Size(47, 20);
             this.btnLock6.TabIndex = 105;
@@ -544,14 +544,14 @@
             // 
             // nudE3M6
             // 
-            this.nudE3M6.Location = new System.Drawing.Point(637, 203);
+            this.nudE3M6.Location = new System.Drawing.Point(678, 203);
             this.nudE3M6.Name = "nudE3M6";
             this.nudE3M6.Size = new System.Drawing.Size(40, 20);
             this.nudE3M6.TabIndex = 104;
             // 
             // nudE1M6
             // 
-            this.nudE1M6.Location = new System.Drawing.Point(498, 203);
+            this.nudE1M6.Location = new System.Drawing.Point(482, 203);
             this.nudE1M6.Name = "nudE1M6";
             this.nudE1M6.Size = new System.Drawing.Size(40, 20);
             this.nudE1M6.TabIndex = 103;
@@ -568,7 +568,7 @@
             // lblE1M6
             // 
             this.lblE1M6.AutoSize = true;
-            this.lblE1M6.Location = new System.Drawing.Point(419, 205);
+            this.lblE1M6.Location = new System.Drawing.Point(356, 205);
             this.lblE1M6.Name = "lblE1M6";
             this.lblE1M6.Size = new System.Drawing.Size(49, 13);
             this.lblE1M6.TabIndex = 101;
@@ -576,7 +576,7 @@
             // 
             // btnLock5
             // 
-            this.btnLock5.Location = new System.Drawing.Point(698, 175);
+            this.btnLock5.Location = new System.Drawing.Point(739, 175);
             this.btnLock5.Name = "btnLock5";
             this.btnLock5.Size = new System.Drawing.Size(47, 20);
             this.btnLock5.TabIndex = 100;
@@ -586,14 +586,14 @@
             // 
             // nudE5M5
             // 
-            this.nudE5M5.Location = new System.Drawing.Point(637, 177);
+            this.nudE5M5.Location = new System.Drawing.Point(678, 177);
             this.nudE5M5.Name = "nudE5M5";
             this.nudE5M5.Size = new System.Drawing.Size(40, 20);
             this.nudE5M5.TabIndex = 99;
             // 
             // nudE4M5
             // 
-            this.nudE4M5.Location = new System.Drawing.Point(498, 177);
+            this.nudE4M5.Location = new System.Drawing.Point(482, 177);
             this.nudE4M5.Name = "nudE4M5";
             this.nudE4M5.Size = new System.Drawing.Size(40, 20);
             this.nudE4M5.TabIndex = 98;
@@ -610,7 +610,7 @@
             // lblE4M5
             // 
             this.lblE4M5.AutoSize = true;
-            this.lblE4M5.Location = new System.Drawing.Point(419, 179);
+            this.lblE4M5.Location = new System.Drawing.Point(356, 179);
             this.lblE4M5.Name = "lblE4M5";
             this.lblE4M5.Size = new System.Drawing.Size(49, 13);
             this.lblE4M5.TabIndex = 96;
@@ -618,7 +618,7 @@
             // 
             // btnLock4
             // 
-            this.btnLock4.Location = new System.Drawing.Point(698, 149);
+            this.btnLock4.Location = new System.Drawing.Point(739, 149);
             this.btnLock4.Name = "btnLock4";
             this.btnLock4.Size = new System.Drawing.Size(47, 20);
             this.btnLock4.TabIndex = 95;
@@ -628,14 +628,14 @@
             // 
             // nudE3M4
             // 
-            this.nudE3M4.Location = new System.Drawing.Point(637, 151);
+            this.nudE3M4.Location = new System.Drawing.Point(678, 151);
             this.nudE3M4.Name = "nudE3M4";
             this.nudE3M4.Size = new System.Drawing.Size(40, 20);
             this.nudE3M4.TabIndex = 94;
             // 
             // nudE2M4
             // 
-            this.nudE2M4.Location = new System.Drawing.Point(498, 151);
+            this.nudE2M4.Location = new System.Drawing.Point(482, 151);
             this.nudE2M4.Name = "nudE2M4";
             this.nudE2M4.Size = new System.Drawing.Size(40, 20);
             this.nudE2M4.TabIndex = 93;
@@ -652,7 +652,7 @@
             // lblE2M4
             // 
             this.lblE2M4.AutoSize = true;
-            this.lblE2M4.Location = new System.Drawing.Point(419, 153);
+            this.lblE2M4.Location = new System.Drawing.Point(356, 153);
             this.lblE2M4.Name = "lblE2M4";
             this.lblE2M4.Size = new System.Drawing.Size(49, 13);
             this.lblE2M4.TabIndex = 91;
@@ -660,7 +660,7 @@
             // 
             // btnLock3
             // 
-            this.btnLock3.Location = new System.Drawing.Point(698, 123);
+            this.btnLock3.Location = new System.Drawing.Point(739, 123);
             this.btnLock3.Name = "btnLock3";
             this.btnLock3.Size = new System.Drawing.Size(47, 20);
             this.btnLock3.TabIndex = 90;
@@ -670,14 +670,14 @@
             // 
             // nudE1M3
             // 
-            this.nudE1M3.Location = new System.Drawing.Point(637, 125);
+            this.nudE1M3.Location = new System.Drawing.Point(678, 125);
             this.nudE1M3.Name = "nudE1M3";
             this.nudE1M3.Size = new System.Drawing.Size(40, 20);
             this.nudE1M3.TabIndex = 89;
             // 
             // nudE5M3
             // 
-            this.nudE5M3.Location = new System.Drawing.Point(498, 125);
+            this.nudE5M3.Location = new System.Drawing.Point(482, 125);
             this.nudE5M3.Name = "nudE5M3";
             this.nudE5M3.Size = new System.Drawing.Size(40, 20);
             this.nudE5M3.TabIndex = 88;
@@ -694,7 +694,7 @@
             // lblE5M3
             // 
             this.lblE5M3.AutoSize = true;
-            this.lblE5M3.Location = new System.Drawing.Point(419, 127);
+            this.lblE5M3.Location = new System.Drawing.Point(356, 127);
             this.lblE5M3.Name = "lblE5M3";
             this.lblE5M3.Size = new System.Drawing.Size(49, 13);
             this.lblE5M3.TabIndex = 86;
@@ -702,7 +702,7 @@
             // 
             // btnLock2
             // 
-            this.btnLock2.Location = new System.Drawing.Point(698, 97);
+            this.btnLock2.Location = new System.Drawing.Point(739, 97);
             this.btnLock2.Name = "btnLock2";
             this.btnLock2.Size = new System.Drawing.Size(47, 20);
             this.btnLock2.TabIndex = 85;
@@ -712,14 +712,14 @@
             // 
             // nudE4M2
             // 
-            this.nudE4M2.Location = new System.Drawing.Point(637, 99);
+            this.nudE4M2.Location = new System.Drawing.Point(678, 99);
             this.nudE4M2.Name = "nudE4M2";
             this.nudE4M2.Size = new System.Drawing.Size(40, 20);
             this.nudE4M2.TabIndex = 84;
             // 
             // nudE3M2
             // 
-            this.nudE3M2.Location = new System.Drawing.Point(498, 99);
+            this.nudE3M2.Location = new System.Drawing.Point(482, 99);
             this.nudE3M2.Name = "nudE3M2";
             this.nudE3M2.Size = new System.Drawing.Size(40, 20);
             this.nudE3M2.TabIndex = 83;
@@ -736,7 +736,7 @@
             // lblE3M2
             // 
             this.lblE3M2.AutoSize = true;
-            this.lblE3M2.Location = new System.Drawing.Point(419, 101);
+            this.lblE3M2.Location = new System.Drawing.Point(356, 101);
             this.lblE3M2.Name = "lblE3M2";
             this.lblE3M2.Size = new System.Drawing.Size(49, 13);
             this.lblE3M2.TabIndex = 81;
@@ -744,7 +744,7 @@
             // 
             // btnLock1
             // 
-            this.btnLock1.Location = new System.Drawing.Point(698, 71);
+            this.btnLock1.Location = new System.Drawing.Point(739, 71);
             this.btnLock1.Name = "btnLock1";
             this.btnLock1.Size = new System.Drawing.Size(47, 20);
             this.btnLock1.TabIndex = 80;
@@ -754,14 +754,14 @@
             // 
             // nudE2M1
             // 
-            this.nudE2M1.Location = new System.Drawing.Point(637, 73);
+            this.nudE2M1.Location = new System.Drawing.Point(678, 73);
             this.nudE2M1.Name = "nudE2M1";
             this.nudE2M1.Size = new System.Drawing.Size(40, 20);
             this.nudE2M1.TabIndex = 79;
             // 
             // nudE1M1
             // 
-            this.nudE1M1.Location = new System.Drawing.Point(498, 73);
+            this.nudE1M1.Location = new System.Drawing.Point(482, 73);
             this.nudE1M1.Name = "nudE1M1";
             this.nudE1M1.Size = new System.Drawing.Size(40, 20);
             this.nudE1M1.TabIndex = 78;
@@ -778,7 +778,7 @@
             // lblE1M1
             // 
             this.lblE1M1.AutoSize = true;
-            this.lblE1M1.Location = new System.Drawing.Point(419, 75);
+            this.lblE1M1.Location = new System.Drawing.Point(356, 75);
             this.lblE1M1.Name = "lblE1M1";
             this.lblE1M1.Size = new System.Drawing.Size(49, 13);
             this.lblE1M1.TabIndex = 76;

@@ -22,6 +22,8 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             btnCreationEquipe.Enabled = false;
             btnCalculer.Visible = false;
 
+            #region ligne
+
             //ligne 1
             lblE1M1.Visible = false;
             nudE1M1.Visible = false;
@@ -91,6 +93,7 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             lblE5M10.Visible = false;
             nudE5M10.Visible = false;
             btnLock10.Visible = false;
+            #endregion
         }
 
         private void btnMapJockey_Click(object sender, EventArgs e)
@@ -102,17 +105,17 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
         private void btnCreationEquipe_Click(object sender, EventArgs e)
         {
-            List<string> E1 = pl.GetPlayerE1();
-            lblNomEquipe1.Text = E1[0] + " " + E1[1];
-            List<string> E2 = pl.GetPlayerE2();
-            lblNomEquipe2.Text = E2[0] + " " + E2[1];
-            List<string> E3 = pl.GetPlayerE3();
-            lblNomEquipe3.Text = E3[0] + " " + E3[1];
-            List<string> E4 = pl.GetPlayerE4();
-            lblNomEquipe4.Text = E4[0] + " " + E4[1];
-            List<string> E5 = pl.GetPlayerE5();
-            lblNomEquipe5.Text = E5[0] + " " + E5[1];
-            btnCreationEquipe.Enabled = false;
+            pl.CreateTeams();
+
+            lblNomEquipe1.Text = pl.getTeam(1).getName();
+            lblNomEquipe2.Text = pl.getTeam(2).getName();
+            lblNomEquipe3.Text = pl.getTeam(3).getName();
+            lblNomEquipe4.Text = pl.getTeam(4).getName();
+            lblNomEquipe5.Text = pl.getTeam(5).getName();
+
+
+            lblE1M1.Text = pl.getTeam(1).getName();
+            lblE2M1.Text = pl.getTeam(2).getName();            
 
             //ligne 1
             lblE1M1.Visible = true;
@@ -120,26 +123,25 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             lblE2M1.Visible = true;
             nudE2M1.Visible = true;
             btnLock1.Visible = true;
+            btnCreationEquipe.Enabled = false;
         }
 
         private void btnCalculer_Click(object sender, EventArgs e)
         {
-            Score src = new Score(lblE1M1.Text, lblE2M1.Text, Convert.ToInt32(nudE1M1.Value), Convert.ToInt32(nudE2M1.Value));
-            lblPointsE1.Text = Convert.ToString(nudE1M1.Value + nudE1M3.Value + nudE1M6.Value + nudE1M9.Value);
-            lblPointsE2.Text = Convert.ToString(nudE2M1.Value + nudE2M10.Value + nudE2M4.Value + nudE2M7.Value);
-            lblPointsE3.Text = Convert.ToString(nudE3M2.Value + nudE3M4.Value + nudE3M6.Value + nudE3M8.Value);
-            lblPointsE4.Text = Convert.ToString(nudE4M2.Value + nudE4M5.Value + nudE4M7.Value + nudE4M9.Value);
-            lblPointsE5.Text = Convert.ToString(nudE5M10.Value + nudE5M3.Value + nudE5M5.Value + nudE5M8.Value);
-
-            if (Convert.ToInt32(lblPointsE1.Text) > Convert.ToInt32(lblPointsE2.Text) || Convert.ToInt32(lblPointsE1.Text) > Convert.ToInt32(lblPointsE3.Text) || Convert.ToInt32(lblPointsE1.Text) > Convert.ToInt32(lblPointsE4.Text) || Convert.ToInt32(lblPointsE1.Text) > Convert.ToInt32(lblPointsE5.Text))
-            {
-                tbx1er.Text = lblNomEquipe1.Text;
-            }
+            //faire passer au ecran suivant ici
             btnCalculer.Enabled = false;
         }
 
         private void btnLock1_Click(object sender, EventArgs e)
         {
+
+            pl.getTeam(1).incScore( Convert.ToInt32(nudE1M1.Value) );
+            pl.getTeam(2).incScore(Convert.ToInt32(nudE2M1.Value));
+            RefreshTeamScore();
+
+            lblE3M2.Text = pl.getTeam(3).getName();
+            lblE4M2.Text = pl.getTeam(4).getName();
+
             //ligne 2
             lblE3M2.Visible = true;
             nudE3M2.Visible = true;
@@ -153,6 +155,13 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
         private void btnLock2_Click(object sender, EventArgs e)
         {
+            pl.getTeam(3).incScore(Convert.ToInt32(nudE3M2.Value));
+            pl.getTeam(4).incScore(Convert.ToInt32(nudE4M2.Value));
+            RefreshTeamScore();
+
+            lblE5M3.Text = pl.getTeam(5).getName();
+            lblE1M3.Text = pl.getTeam(1).getName();
+
             //ligne 3
             lblE5M3.Visible = true;
             nudE5M3.Visible = true;
@@ -166,6 +175,13 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
         private void btnLock3_Click(object sender, EventArgs e)
         {
+            pl.getTeam(5).incScore(Convert.ToInt32(nudE5M3.Value));
+            pl.getTeam(1).incScore(Convert.ToInt32(nudE1M3.Value));
+            RefreshTeamScore();
+
+            lblE2M4.Text = pl.getTeam(2).getName();
+            lblE3M4.Text = pl.getTeam(3).getName();
+
             //ligne 4
             lblE2M4.Visible = true;
             nudE2M4.Visible = true;
@@ -179,6 +195,13 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
         private void btnLock4_Click(object sender, EventArgs e)
         {
+            pl.getTeam(2).incScore(Convert.ToInt32(nudE2M4.Value));
+            pl.getTeam(3).incScore(Convert.ToInt32(nudE3M4.Value));
+            RefreshTeamScore();
+
+            lblE4M5.Text = pl.getTeam(4).getName();
+            lblE5M5.Text = pl.getTeam(5).getName();
+
             //ligne 5
             lblE4M5.Visible = true;
             nudE4M5.Visible = true;
@@ -192,6 +215,13 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
         private void btnLock5_Click(object sender, EventArgs e)
         {
+            pl.getTeam(4).incScore(Convert.ToInt32(nudE4M5.Value));
+            pl.getTeam(5).incScore(Convert.ToInt32(nudE5M5.Value));
+            RefreshTeamScore();
+
+            lblE1M6.Text = pl.getTeam(1).getName();
+            lblE3M6.Text = pl.getTeam(3).getName();
+
             //ligne 6
             lblE1M6.Visible = true;
             nudE1M6.Visible = true;
@@ -205,6 +235,13 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
         private void btnLock6_Click(object sender, EventArgs e)
         {
+            pl.getTeam(1).incScore(Convert.ToInt32(nudE1M6.Value));
+            pl.getTeam(3).incScore(Convert.ToInt32(nudE3M6.Value));
+            RefreshTeamScore();
+
+            lblE2M7.Text = pl.getTeam(2).getName();
+            lblE4M7.Text = pl.getTeam(4).getName();
+
             //ligne 7
             lblE2M7.Visible = true;
             nudE2M7.Visible = true;
@@ -218,6 +255,13 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
         private void btnLock7_Click(object sender, EventArgs e)
         {
+            pl.getTeam(2).incScore(Convert.ToInt32(nudE2M7.Value));
+            pl.getTeam(4).incScore(Convert.ToInt32(nudE4M7.Value));
+            RefreshTeamScore();
+
+            lblE3M8.Text = pl.getTeam(3).getName();
+            lblE5M8.Text = pl.getTeam(5).getName();
+
             //ligne 8
             lblE3M8.Visible = true;
             nudE3M8.Visible = true;
@@ -231,6 +275,13 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
         private void btnLock8_Click(object sender, EventArgs e)
         {
+            pl.getTeam(3).incScore(Convert.ToInt32(nudE3M8.Value));
+            pl.getTeam(5).incScore(Convert.ToInt32(nudE5M8.Value));
+            RefreshTeamScore();
+
+            lblE1M9.Text = pl.getTeam(1).getName();
+            lblE4M9.Text = pl.getTeam(4).getName();
+
             //ligne 9
             lblE1M9.Visible = true;
             nudE1M9.Visible = true;
@@ -244,6 +295,13 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
         private void btnLock9_Click(object sender, EventArgs e)
         {
+            pl.getTeam(1).incScore(Convert.ToInt32(nudE1M9.Value));
+            pl.getTeam(4).incScore(Convert.ToInt32(nudE4M9.Value));
+            RefreshTeamScore();
+
+            lblE2M10.Text = pl.getTeam(2).getName();
+            lblE5M10.Text = pl.getTeam(5).getName();
+
             //ligne 10
             lblE2M10.Visible = true;
             nudE2M10.Visible = true;
@@ -257,10 +315,27 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
         private void btnLock10_Click(object sender, EventArgs e)
         {
+            pl.getTeam(2).incScore(Convert.ToInt32(nudE2M10.Value));
+            pl.getTeam(5).incScore(Convert.ToInt32(nudE5M10.Value));
+            RefreshTeamScore();
+
             btnCalculer.Visible = true;
             nudE2M10.Enabled = false;
             nudE5M10.Enabled = false;
             btnLock10.Enabled = false;
+        }
+
+        /// <summary>
+        /// Prend les scores de chaque équipe et les place dans la forme
+        /// </summary>
+        private void RefreshTeamScore()
+        {
+            lblPointsE1.Text = Convert.ToString(pl.getTeam(1).Score);
+            lblPointsE2.Text = Convert.ToString(pl.getTeam(2).Score);
+            lblPointsE3.Text = Convert.ToString(pl.getTeam(3).Score);
+            lblPointsE4.Text = Convert.ToString(pl.getTeam(4).Score);
+            lblPointsE5.Text = Convert.ToString(pl.getTeam(5).Score);
+
         }
     }
 }
