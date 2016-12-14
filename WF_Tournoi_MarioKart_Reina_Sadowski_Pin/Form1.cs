@@ -128,7 +128,18 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
         private void btnCalculer_Click(object sender, EventArgs e)
         {
-            //faire passer au ecran suivant ici
+            int[] scoresList = { Convert.ToInt32(lblPointsE1.Text), Convert.ToInt32(lblPointsE2.Text), Convert.ToInt32(lblPointsE3.Text), Convert.ToInt32(lblPointsE4.Text), Convert.ToInt32(lblPointsE5.Text) };
+            int maxValue = scoresList.Max();
+            Array.Sort(scoresList);
+            Array.Reverse(scoresList);
+
+            btn1er.Text = Convert.ToString(scoresList[0]);
+            btn2eme.Text = Convert.ToString(scoresList[1]);
+            btn3eme.Text = Convert.ToString(scoresList[2]);
+            btn4eme.Text = Convert.ToString(scoresList[3]);
+            btn5eme.Text = Convert.ToString(scoresList[4]);
+
+
             btnCalculer.Enabled = false;
         }
 
@@ -336,6 +347,107 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             lblPointsE4.Text = Convert.ToString(pl.getTeam(4).Score);
             lblPointsE5.Text = Convert.ToString(pl.getTeam(5).Score);
 
+        }
+        private void btn1er_Click(object sender, EventArgs e)
+        {
+            btnWM1.Text = btn1er.Text;
+            btnLM1.Text = btn3eme.Text;
+            btn1er.Enabled = false;
+            btn3eme.Enabled = false;
+            btnWM1.Enabled = true;
+            btnLM1.Enabled = true;
+        }
+
+        private void btn3eme_Click(object sender, EventArgs e)
+        {
+            btnWM1.Text = btn3eme.Text;
+            btnLM1.Text = btn1er.Text;
+            btn1er.Enabled = false;
+            btn3eme.Enabled = false;
+            btnWM1.Enabled = true;
+            btnLM1.Enabled = true;
+        }
+
+        private void btn2eme_Click(object sender, EventArgs e)
+        {
+            btnWM2.Text = btn2eme.Text;
+            btnLM2.Text = btn4eme.Text;
+            btn2eme.Enabled = false;
+            btn4eme.Enabled = false;
+            btnWM2.Enabled = true;
+            btnLM2.Enabled = true;
+        }
+
+        private void btn4eme_Click(object sender, EventArgs e)
+        {
+            btnWM2.Text = btn4eme.Text;
+            btnLM2.Text = btn2eme.Text;
+            btn2eme.Enabled = false;
+            btn4eme.Enabled = false;
+            btnWM2.Enabled = true;
+            btnLM2.Enabled = true;
+        }
+
+        private void btn5eme_Click(object sender, EventArgs e)
+        {
+            btnWM3.Text = btn5eme.Text;
+            btnLM1.Enabled = false;
+            btn5eme.Enabled = false;
+            btnWM3.Enabled = true;
+        }
+
+        private void btnLM1_Click(object sender, EventArgs e)
+        {
+            btnWM3.Text = btnLM1.Text;
+            btnLM1.Enabled = false;
+            btn5eme.Enabled = false;
+            btnWM3.Enabled = true;
+        }
+
+        private void btnWM1_Click(object sender, EventArgs e)
+        {
+            btnWM4.Text = btnWM1.Text;
+            btnWM1.Enabled = false;
+            btnWM2.Enabled = false;
+            btnWM4.Enabled = true;
+        }
+
+        private void btnWM2_Click(object sender, EventArgs e)
+        {
+            btnWM4.Text = btnWM2.Text;
+            btnWM1.Enabled = false;
+            btnWM2.Enabled = false;
+            btnWM4.Enabled = true;
+        }
+
+        private void btnWM3_Click(object sender, EventArgs e)
+        {
+            btnWM5.Text = btnWM3.Text;
+            btnWM3.Enabled = false;
+            btnLM2.Enabled = false;
+            btnWM5.Enabled = true;
+        }
+
+        private void btnLM2_Click(object sender, EventArgs e)
+        {
+            btnWM5.Text = btnLM2.Text;
+            btnWM3.Enabled = false;
+            btnLM2.Enabled = false;
+            btnWM5.Enabled = true;
+        }
+
+        private void btnWM4_Click(object sender, EventArgs e)
+        {
+            btnWinner.Text = btnWM4.Text;
+            btnWM4.Enabled = false;
+            btnWM5.Enabled = false;
+        }
+
+        private void btnWM5_Click(object sender, EventArgs e)
+        {
+            btnWinner.Text = btnWM5.Text;
+            btnWM4.Enabled = false;
+            btnWM5.Enabled = false;
         }
     }
 }
