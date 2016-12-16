@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * 
+ * 
+ * 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +18,6 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 {
     public partial class Form1 : Form
     {
-
         Player pl = new Player();
 
         public Form1()
@@ -21,6 +26,12 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
             btnCreationEquipe.Enabled = false;
             btnCalculer.Visible = false;
+
+            btn1.Visible = false;
+            btn2.Visible = false;
+            btn3.Visible = false;
+            btn4.Visible = false;
+            btn5.Visible = false;
 
             #region ligne
 
@@ -115,7 +126,7 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
 
             lblE1M1.Text = pl.getTeam(1).getName();
-            lblE2M1.Text = pl.getTeam(2).getName();            
+            lblE2M1.Text = pl.getTeam(2).getName();
 
             //ligne 1
             lblE1M1.Visible = true;
@@ -128,25 +139,49 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 
         private void btnCalculer_Click(object sender, EventArgs e)
         {
-            int[] scoresList = { Convert.ToInt32(lblPointsE1.Text), Convert.ToInt32(lblPointsE2.Text), Convert.ToInt32(lblPointsE3.Text), Convert.ToInt32(lblPointsE4.Text), Convert.ToInt32(lblPointsE5.Text) };
+            int[] scoresList = { pl.getTeam(1).Score, pl.getTeam(2).Score, pl.getTeam(3).Score, pl.getTeam(4).Score, pl.getTeam(5).Score };
             int maxValue = scoresList.Max();
             Array.Sort(scoresList);
             Array.Reverse(scoresList);
 
-            btn1er.Text = Convert.ToString(scoresList[0]);
-            btn2eme.Text = Convert.ToString(scoresList[1]);
-            btn3eme.Text = Convert.ToString(scoresList[2]);
-            btn4eme.Text = Convert.ToString(scoresList[3]);
-            btn5eme.Text = Convert.ToString(scoresList[4]);
+            for (int i = 1; i < scoresList.Count()+1; i++)
+            {
+                if (scoresList[0] == pl.getTeam(i).Score)
+                {
+                    btn1er.Text = pl.getTeam(i).getName();
+                }
+                else if (scoresList[1] == pl.getTeam(i).Score)
+                {
+                    btn2eme.Text = pl.getTeam(i).getName();
+                }
+                else if (scoresList[2] == pl.getTeam(i).Score)
+                {
+                    btn3eme.Text = pl.getTeam(i).getName();
+                }
+                else if (scoresList[3] == pl.getTeam(i).Score)
+                {
+                    btn4eme.Text = pl.getTeam(i).getName();
+                }
+                else if (scoresList[4] == pl.getTeam(i).Score)
+                {
+                    btn5eme.Text = pl.getTeam(i).getName();
+                }
+            }
 
-
+            
             btnCalculer.Enabled = false;
+
+            btn1.Enabled = false;
+            btn2.Enabled = false;
+            btn3.Enabled = false;
+            btn4.Enabled = false;
+            btn5.Enabled = false;
         }
 
         private void btnLock1_Click(object sender, EventArgs e)
         {
 
-            pl.getTeam(1).incScore( Convert.ToInt32(nudE1M1.Value) );
+            pl.getTeam(1).incScore(Convert.ToInt32(nudE1M1.Value));
             pl.getTeam(2).incScore(Convert.ToInt32(nudE2M1.Value));
             RefreshTeamScore();
 
@@ -334,6 +369,12 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             nudE2M10.Enabled = false;
             nudE5M10.Enabled = false;
             btnLock10.Enabled = false;
+
+            btn1.Visible = true;
+            btn2.Visible = true;
+            btn3.Visible = true;
+            btn4.Visible = true;
+            btn5.Visible = true;
         }
 
         /// <summary>
@@ -348,6 +389,7 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             lblPointsE5.Text = Convert.ToString(pl.getTeam(5).Score);
 
         }
+
         private void btn1er_Click(object sender, EventArgs e)
         {
             btnWM1.Text = btn1er.Text;
@@ -448,6 +490,36 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             btnWinner.Text = btnWM5.Text;
             btnWM4.Enabled = false;
             btnWM5.Enabled = false;
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            pl.getTeam(1).incScore(1);
+            RefreshTeamScore();
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            pl.getTeam(2).incScore(1);
+            RefreshTeamScore();
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            pl.getTeam(3).incScore(1);
+            RefreshTeamScore();
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            pl.getTeam(4).incScore(1);
+            RefreshTeamScore();
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            pl.getTeam(5).incScore(1);
+            RefreshTeamScore();
         }
     }
 }
