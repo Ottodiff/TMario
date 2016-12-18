@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Auteurs : Sadowski Christophe, Reina Ricardo, Pin Guillaume
+ * version : 1.0
+ * Description :
+ *                  "Application créer pour le tournoi de Mario Kart,
+ *                   permet de gerer la generation d equipe, et du déroulement
+ *                   du tournoi dans son intégralité.                         " 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,15 +19,19 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 {     
     public class Player : Object
     {
+        //declaration variables
         const int TEAMCOUNT = 5;
-
         private string _joueur;
         private List<string> _eleve = new List<string> { "Ilias", "Dylan", "Ricardo", "Christophe", "Guillaume", "Kilian", "Miguel", "Guntram", "David", "Tiago" };
         Random rdm;
-
         private Team[] _teams = new Team[TEAMCOUNT];
 
-
+        public string Joueur
+        {
+            get { return _joueur; }
+            set { _joueur = value; }
+        }
+        
         /// <summary>
         /// Retourne la team en fonction de son numéro
         /// </summary>
@@ -28,6 +41,10 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             return (InTeamNumber > 0 && InTeamNumber <= _teams.Count()) ? _teams[InTeamNumber-1] : new Team();
         }
 
+        /// <summary>
+        /// creer des team random en fonction de la list _eleve
+        /// </summary>
+        /// <returns>true si l equipe est bien creer, sinon false</returns>
         public bool CreateTeams()
         {
             for (int i = 0; i < TEAMCOUNT; ++i)
@@ -45,19 +62,18 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             // Done
             return true;
         }
-
-        public string Joueur
-        {
-            get { return _joueur; }
-            set { _joueur = value; }
-        }
-
+        
+        //constructeur
         public Player()
         {
             this.Joueur = _joueur;
             rdm = new Random();
         }
 
+        /// <summary>
+        /// choisit un eleve random dans la list _eleve
+        /// </summary>
+        /// <returns>retourne le nom d un joueur</returns>
         public string GetMapJockey()
         {
             int r = rdm.Next(_eleve.Count());

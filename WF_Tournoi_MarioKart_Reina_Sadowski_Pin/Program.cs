@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Auteurs : Sadowski Christophe, Reina Ricardo, Pin Guillaume
+ * version : 1.0
+ * Description :
+ *                  "Application créer pour le tournoi de Mario Kart,
+ *                   permet de gerer la generation d equipe, et du déroulement
+ *                   du tournoi dans son intégralité.                         " 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Auteurs : Sadowski Christophe, Reina Ricardo, Pin Guillaume
+ * version : 1.0
+ * Description :
+ *                  "Application créer pour le tournoi de Mario Kart,
+ *                   permet de gerer la generation d equipe, et du déroulement
+ *                   du tournoi dans son intégralité.                         " 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,16 +17,38 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
 {
     public class Team : Object
     {
+        //declaration variable
         private string _joueur1;
         private string _joueur2;
         private int _score;
+        
+        #region Geter Seter
 
+        public string Joueur1
+        {
+            get { return _joueur1; }
+            set { _joueur1 = value; }
+        }
+
+        public string Joueur2
+        {
+            get { return _joueur2; }
+            set { _joueur2 = value; }
+        }
+
+        public int Score
+        {
+            get { return _score; }
+            set { _score = value; }
+        }
+
+        #endregion
 
         /// <summary>
-        /// 
+        /// constructeur
         /// </summary>
-        /// <param name="?"></param>
-        /// <param name="?"></param>
+        /// <param name="?">nom joueur 1</param>
+        /// <param name="?">nom joueur 2</param>
         public Team(string j1 = "", string j2 = "")
         {
             _joueur1 = j1;
@@ -52,25 +83,6 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
         {
             _score += InValue;
             return _score;
-        }
-
-
-        public string Joueur1
-        {
-            get { return _joueur1; }
-            set { _joueur1 = value; }
-        }
-
-        public string Joueur2
-        {
-            get { return _joueur2; }
-            set { _joueur2 = value; }
-        }
-
-        public int Score
-        {
-            get { return _score; }
-            set { _score = value; }
         }
     }
 }
