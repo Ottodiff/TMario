@@ -1102,7 +1102,7 @@
             this.ClientSize = new System.Drawing.Size(875, 554);
             this.Controls.Add(this.tclOnglets);
             this.Name = "Form1";
-            this.Text = "Mario kart !";
+            this.Text = "Mario kart WIIIIII !";
             this.tbTournoi.ResumeLayout(false);
             this.tbQualification.ResumeLayout(false);
             this.tbQualification.PerformLayout();

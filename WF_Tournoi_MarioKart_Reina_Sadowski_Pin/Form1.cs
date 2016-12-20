@@ -47,7 +47,7 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             //choisit un map jokey
             lblNomMapJockey.Text = pl.GetMapJockey();
 
-
+            //affichage
             btnMapJockey.Enabled = false;
             btnCreationEquipe.Enabled = true;
         }
@@ -57,13 +57,13 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
             //creer les équipes
             pl.CreateTeams();
 
+
+            //affiche les noms des equipes
             lblNomEquipe1.Text = pl.getTeam(1).getName();
             lblNomEquipe2.Text = pl.getTeam(2).getName();
             lblNomEquipe3.Text = pl.getTeam(3).getName();
             lblNomEquipe4.Text = pl.getTeam(4).getName();
             lblNomEquipe5.Text = pl.getTeam(5).getName();
-
-            //affiche les noms des equipes
             lblE1M1.Text = pl.getTeam(1).getName();
             lblE2M1.Text = pl.getTeam(2).getName();
 
@@ -81,7 +81,6 @@ namespace WF_Tournoi_MarioKart_Reina_Sadowski_Pin
         {
             //met les score dans un tableau
             int[] scoresList = { pl.getTeam(1).Score, pl.getTeam(2).Score, pl.getTeam(3).Score, pl.getTeam(4).Score, pl.getTeam(5).Score };
-            //int maxValue = scoresList.Max();
             //trie le tableau
             Array.Sort(scoresList);
             //inverse le tableau
